@@ -57,7 +57,13 @@
 <!--  HERO — full-bleed photo, logo, headline, one big button       -->
 <!-- ============================================================= -->
 <section class="hero" id="home">
-  <div class="hero-media" aria-hidden="true"></div>
+  <!-- Jo's own drone footage of the fields, on a silent loop.
+       The poster image shows first, and stands in if the video can't play. -->
+  <video class="hero-video" autoplay muted loop playsinline preload="auto"
+         poster="images/drone-poster.jpg" aria-hidden="true" tabindex="-1">
+    <source src="images/drone.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-scrim" aria-hidden="true"></div>
   <div class="hero-inner">
     <img src="images/badge.png" alt="" class="hero-logo" aria-hidden="true" />
     <h1>Club&nbsp;K9 in Rusper</h1>

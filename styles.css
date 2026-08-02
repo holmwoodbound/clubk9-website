@@ -174,14 +174,19 @@ p { margin: 0 0 1.1em; }
   text-align: center;
   overflow: hidden;
 }
-.hero-media {
+/* drone footage fills the hero; poster image sits behind as a fallback */
+.hero { background: url('images/drone-poster.jpg') center/cover no-repeat; }
+
+.hero-video {
   position: absolute; inset: 0;
-  background: url('images/hero.jpg') center/cover no-repeat;
-  transform: scale(1.04);
-  animation: heroDrift 24s ease-in-out infinite alternate;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  pointer-events: none;
 }
-.hero-media::after {
-  content: ''; position: absolute; inset: 0;
+
+/* dark wash so the white headline stays readable over the footage */
+.hero-scrim {
+  position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(35,40,28,.62) 0%, rgba(35,40,28,.48) 45%, rgba(35,40,28,.72) 100%);
 }
 .hero-inner { position: relative; padding: 4.5rem 1.5rem; }
@@ -542,10 +547,6 @@ p { margin: 0 0 1.1em; }
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }
 
-@keyframes heroDrift {
-  from { transform: scale(1.04) translate3d(0,0,0); }
-  to   { transform: scale(1.12) translate3d(0,-14px,0); }
-}
 @keyframes floaty {
   0%,100% { transform: translateY(0); }
   50%     { transform: translateY(-12px); }
@@ -555,6 +556,8 @@ p { margin: 0 0 1.1em; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
+  /* visitors who ask for less motion get the still photo, not the video */
+  .hero-video { display: none; }
 }
 
 /* ===== responsive =============================================== */
