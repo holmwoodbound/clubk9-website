@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Club K9 | The Very Best Doggy Care Imaginable — Rusper</title>
   <meta name="description" content="Club K9 is a 5-star licensed dog day care, boarding, walking and puppy training service set in acres of secure countryside near Rusper, on the Surrey/Sussex border. Serving Crawley, Dorking, Horley & Horsham." />
-  <meta name="theme-color" content="#A87E54" />
+  <meta name="theme-color" content="#7A8B54" />
 
   <!-- Social preview -->
   <meta property="og:title" content="Club K9 — The Very Best Doggy Care Imaginable" />
@@ -13,10 +13,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/dog-01.jpg" />
 
-  <!-- Fonts: Fredoka (friendly, rounded headings) + Nunito (clean body) -->
+  <!-- Fonts: Oswald (tall condensed headings) + Nunito (clean body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="images/badge.png" type="image/png" />
@@ -24,77 +24,83 @@
 <body>
 
 <!-- ============================================================= -->
-<!--  HEADER / NAVIGATION                                           -->
-<!--  EDIT: nav links & the "Get in touch" button live here        -->
+<!--  HEADER — centred logo above a centred nav bar                 -->
+<!--  EDIT: nav links & the "Book a visit" button live here         -->
 <!-- ============================================================= -->
 <header class="site-header" id="top">
-  <div class="container nav-inner">
+  <div class="brand-bar">
     <a href="#home" class="brand" aria-label="Club K9 home">
-      <img src="images/mascot.png" alt="Bear, the Club K9 mascot" class="brand-mark" />
-      <span class="brand-text">Club<span class="brand-k9">K9</span></span>
+      <img src="images/badge.png" alt="Club K9" class="brand-logo" />
     </a>
+  </div>
 
-    <nav class="main-nav" id="mainNav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#why">Why Us</a>
-      <a href="#about">About</a>
-      <a href="#crew">The Crew</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact" class="nav-cta">Get in touch</a>
-    </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+  <div class="nav-bar">
+    <div class="container nav-inner">
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#services">Our Services</a>
+        <a href="#fields">The Fields</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#crew">The Crew</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Book a visit</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <!-- ============================================================= -->
-<!--  HERO                                                         -->
+<!--  HERO — full-bleed photo, logo, headline, one big button       -->
 <!-- ============================================================= -->
 <section class="hero" id="home">
-  <!-- floating paw prints (decorative, animated) -->
-  <div class="paws" aria-hidden="true">
-    <span class="paw p1">🐾</span>
-    <span class="paw p2">🐾</span>
-    <span class="paw p3">🐾</span>
-    <span class="paw p4">🐾</span>
-    <span class="paw p5">🐾</span>
+  <div class="hero-media" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <img src="images/badge.png" alt="" class="hero-logo" aria-hidden="true" />
+    <h1>Club&nbsp;K9 in Rusper</h1>
+    <p class="hero-tagline">The very best doggy care imaginable</p>
+    <a href="#contact" class="btn btn-primary btn-lg">Join Club K9</a>
   </div>
+</section>
 
-  <div class="container hero-grid">
-    <div class="hero-copy reveal">
-      <p class="eyebrow">🐾 5-star licensed day care · Rusper, RH12</p>
-      <h1>The Very Best<br><span class="hl">Doggy Care</span> Imaginable</h1>
-      <p class="lead">Acres of secure country fields, indoor enrichment and bags of belly rubs.
-        At Club&nbsp;K9 your best friend gets a proper <strong>waggin'&nbsp;good day out</strong> — every single day.</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Book a Play Date</a>
-        <a href="#crew" class="btn btn-ghost">Meet The Crew</a>
-      </div>
-      <p class="hero-trust">Fully insured · Canine first-aid qualified · Licence DAYDOG/3033/23</p>
+<!-- slim licence strip, just like a proper 5-star day care should have -->
+<div class="licence-bar">
+  Council licence — Horsham District Council · DAYDOG/3033/23 · 5 STAR · Jo Tallis
+</div>
+
+<!-- ============================================================= -->
+<!--  ABOUT — paw-tick checklist                                    -->
+<!-- ============================================================= -->
+<section class="band band-pale" id="about">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <h2>About Club K9</h2>
+      <ul class="paw-list">
+        <li>Expert care for your dog</li>
+        <li>5-star licensed with Horsham council</li>
+        <li>Acres of secure countryside</li>
+        <li>All-weather indoor facilities</li>
+        <li>Small, carefully matched packs</li>
+        <li>Home-from-home boarding</li>
+        <li>Dog walking &amp; drop-in visits</li>
+        <li>Puppy training &amp; socialising programme</li>
+        <li>Canine first-aid qualified</li>
+        <li>Local family-run business since 2015</li>
+      </ul>
     </div>
-
-    <div class="hero-visual reveal">
-      <div class="blob"></div>
-      <img src="images/dog-01.jpg" alt="A happy black Labrador smiling at Club K9" class="hero-photo" />
-      <div class="hero-badge floaty">
-        <span class="stars">★★★★★</span>
-        <span>5-star rated</span>
-      </div>
+    <div class="about-aside reveal">
+      <img src="images/mascot.png" alt="Bear, the Club K9 mascot" class="about-mascot floaty" />
     </div>
   </div>
-
-  <!-- wavy divider -->
-  <div class="wave wave-top"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C360,90 1080,0 1440,50 L1440,90 L0,90 Z"></path></svg></div>
 </section>
 
 <!-- ============================================================= -->
-<!--  TRUST STRIP (animated counters)                              -->
+<!--  TRUST STRIP (animated counters)                               -->
 <!-- ============================================================= -->
-<section class="trust">
+<section class="band band-olive trust">
   <div class="container trust-grid">
     <div class="stat reveal"><span class="num" data-count="10" data-suffix="+">0</span><span class="label">Years of tail wags</span></div>
     <div class="stat reveal"><span class="num" data-count="250" data-suffix="+">0</span><span class="label">Happy hounds</span></div>
@@ -104,63 +110,50 @@
 </section>
 
 <!-- ============================================================= -->
-<!--  SERVICES                                                     -->
+<!--  SERVICES — numbered flat cards                                -->
 <!--  EDIT: add / remove a service by copying a .service-card block -->
 <!-- ============================================================= -->
-<section class="section services" id="services">
+<section class="band band-offwhite" id="services">
   <div class="container">
     <div class="section-head reveal">
-      <p class="kicker">What we offer</p>
-      <h2>Where every dog has its day care</h2>
+      <h2>Six ways we spoil them</h2>
       <p class="section-sub">From zoomies in the field to cosy overnight stays, we've got every tail covered.</p>
     </div>
 
     <div class="service-grid">
-      <!-- Day Care -->
       <article class="service-card reveal">
-        <div class="svc-icon">🦴</div>
+        <span class="svc-num">1</span>
         <h3>Doggy Day Care</h3>
-        <p class="svc-tag">"Sit. Stay. Play."</p>
         <p>Full days of supervised fun, sniffs and sunny snoozes with a small, well-matched pack of pals.</p>
       </article>
 
-      <!-- Boarding -->
       <article class="service-card reveal">
-        <div class="svc-icon">🏡</div>
+        <span class="svc-num">2</span>
         <h3>Luxury Boarding</h3>
-        <p class="svc-tag">"A home away from home."</p>
         <p>Cosy overnight stays with home comforts, bedtime cuddles and a familiar routine — holidays sorted.</p>
       </article>
 
-      <!-- Walking -->
       <article class="service-card reveal">
-        <div class="svc-icon">🥾</div>
+        <span class="svc-num">3</span>
         <h3>Dog Walking</h3>
-        <p class="svc-tag">"Lead the way."</p>
         <p>Adventures and zoomies across acres of secure countryside to keep paws busy and minds happy.</p>
       </article>
 
-      <!-- Puppy Training -->
       <article class="service-card reveal">
-        <div class="svc-icon">🎓</div>
+        <span class="svc-num">4</span>
         <h3>Puppy Training</h3>
-        <p class="svc-tag">"Top of the class."</p>
         <p>Kind, certified training to turn waggy little troublemakers into polite, confident grown-ups.</p>
       </article>
 
-      <!-- Photography -->
       <article class="service-card reveal">
-        <div class="svc-icon">📸</div>
+        <span class="svc-num">5</span>
         <h3>Dog Photography</h3>
-        <p class="svc-tag">"Strike a pose, pup-arazzi!"</p>
         <p>Gorgeous portraits of your four-legged superstar to treasure for years of tail-wagging memories.</p>
       </article>
 
-      <!-- Enrichment -->
       <article class="service-card reveal">
-        <div class="svc-icon">🧠</div>
-        <h3>K9-iQ Enrichment Arena</h3>
-        <p class="svc-tag">"Brains and brawn."</p>
+        <span class="svc-num">6</span>
+        <h3>K9-iQ Enrichment</h3>
         <p>A dedicated indoor arena packed with games to sniff out, puzzles to solve and energy to burn.</p>
       </article>
     </div>
@@ -168,23 +161,34 @@
 </section>
 
 <!-- ============================================================= -->
+<!--  SPLIT BAND — The Fields (text on sage, photo edge-to-edge)    -->
+<!-- ============================================================= -->
+<section class="split" id="fields">
+  <div class="split-copy reveal">
+    <div class="split-inner">
+      <h2>Acres to call their own</h2>
+      <p>Set on a working farm near Rusper, Club K9 has secure exercise fields as far as the eye can sniff — wide-open, fully fenced and made for proper off-lead zoomies.</p>
+      <p>There's shade under the old trees for hot days, long grass for a good sniffari, and a warm indoor barn for when the British weather does what it does best.</p>
+      <a href="#contact" class="btn btn-primary">Arrange a visit</a>
+    </div>
+  </div>
+  <div class="split-media" style="background-image:url('images/hero.jpg')" role="img" aria-label="The secure exercise fields at Club K9"></div>
+</section>
+
+<!-- ============================================================= -->
 <!--  PRICING                                                      -->
 <!--  EDIT: the prices below are EXAMPLES — change the £ figures.   -->
-<!--  Add/remove a plan by copying a .price-card block.            -->
 <!-- ============================================================= -->
-<section class="section pricing" id="pricing">
+<section class="band band-pale" id="pricing">
   <div class="container">
     <div class="section-head reveal">
-      <p class="kicker">Treats &amp; tariffs</p>
-      <h2>Pawfect plans for every pup</h2>
+      <h2>Memberships &amp; rates</h2>
       <p class="section-sub">Simple, friendly pricing — no hidden bones. Multi-day, sibling &amp; block-booking discounts available, just ask!</p>
     </div>
 
     <div class="price-grid">
-      <!-- Day Care (featured) -->
       <article class="price-card featured reveal">
-        <span class="price-badge">Most popular 🐾</span>
-        <div class="price-ic">🦴</div>
+        <span class="price-badge">Most popular</span>
         <h3>Doggy Day Care</h3>
         <p class="price-amount">£<span class="price-num">30</span><span class="price-unit">/ full day</span></p>
         <p class="price-alt">Half day £20</p>
@@ -197,9 +201,7 @@
         <a href="#contact" class="btn btn-primary btn-block">Book a day</a>
       </article>
 
-      <!-- Boarding -->
       <article class="price-card reveal">
-        <div class="price-ic">🏡</div>
         <h3>Luxury Boarding</h3>
         <p class="price-amount">£<span class="price-num">40</span><span class="price-unit">/ night</span></p>
         <p class="price-alt">Day care included</p>
@@ -212,9 +214,7 @@
         <a href="#contact" class="btn btn-ghost btn-block">Enquire</a>
       </article>
 
-      <!-- Walking -->
       <article class="price-card reveal">
-        <div class="price-ic">🥾</div>
         <h3>Dog Walking</h3>
         <p class="price-amount">£<span class="price-num">15</span><span class="price-unit">/ walk</span></p>
         <p class="price-alt">Solo or small group</p>
@@ -227,9 +227,7 @@
         <a href="#contact" class="btn btn-ghost btn-block">Enquire</a>
       </article>
 
-      <!-- Puppy Training -->
       <article class="price-card reveal">
-        <div class="price-ic">🎓</div>
         <h3>Puppy Training</h3>
         <p class="price-amount">£<span class="price-num">35</span><span class="price-unit">/ session</span></p>
         <p class="price-alt">Block of 6 from £180</p>
@@ -248,56 +246,20 @@
 </section>
 
 <!-- ============================================================= -->
-<!--  WHY US — feature band over the field photo                   -->
+<!--  SPLIT BAND — Meet Jo (photo left, dark panel right)           -->
 <!-- ============================================================= -->
-<section class="section why" id="why">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="kicker">Why Club K9</p>
-      <h2>Paws &amp; relax — they're in safe hands</h2>
-      <p class="section-sub">Everything your dog needs to feel happy, safe and thoroughly spoilt.</p>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-item reveal"><div class="why-ic">🌳</div><h4>Acres of secure fields</h4><p>Wide-open, fully-fenced countryside to run, sniff and explore to their heart's content.</p></div>
-      <div class="why-item reveal"><div class="why-ic">⭐</div><h4>5-star licensed</h4><p>Council-inspected, fully insured and run to the very highest standards of care.</p></div>
-      <div class="why-item reveal"><div class="why-ic">⛑️</div><h4>First-aid qualified</h4><p>Canine first-aid trained team on hand, so your dog is always in capable paws.</p></div>
-      <div class="why-item reveal"><div class="why-ic">🐶</div><h4>Small, happy packs</h4><p>Carefully matched groups with proper supervision — no chaos, just good company.</p></div>
-      <div class="why-item reveal"><div class="why-ic">🏠</div><h4>Indoor enrichment</h4><p>Brain games and cosy indoor spaces for rainy days and well-earned afternoon naps.</p></div>
-      <div class="why-item reveal"><div class="why-ic">❤️</div><h4>Loads of love</h4><p>We treat every dog like one of our own — because to us, they really are.</p></div>
-    </div>
-  </div>
-
-  <!-- facility photo band -->
-  <div class="facility reveal" style="background-image:url('images/hero.jpg')">
-    <div class="facility-overlay">
-      <h3>Acres of countryside to call their own</h3>
-      <p>Set on a working farm near Rusper, with secure exercise fields as far as the eye can sniff.</p>
-      <a href="#contact" class="btn btn-primary">Arrange a visit</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================= -->
-<!--  ABOUT — Jo & Bear                                            -->
-<!-- ============================================================= -->
-<section class="section about" id="about">
-  <div class="container about-grid">
-    <div class="about-photo reveal">
-      <img src="images/jo.jpg" alt="Jo, founder of Club K9, with her dogs in the woods" />
-      <img src="images/mascot.png" alt="Bear the chocolate Labrador" class="about-bear floaty" />
-    </div>
-    <div class="about-copy reveal">
-      <p class="kicker">The human behind the hounds</p>
-      <h2>Hi, I'm Jo 👋</h2>
+<section class="split split-reverse" id="jo">
+  <div class="split-media" style="background-image:url('images/jo.jpg')" role="img" aria-label="Jo, founder of Club K9, out with her dogs"></div>
+  <div class="split-copy split-dark reveal">
+    <div class="split-inner">
+      <h2>Hi, I'm Jo</h2>
       <p>Club K9 began back in <strong>2015</strong> as a little home-based labour of love — just me, a big heart for dogs, and my chocolate Labrador <strong>Bear</strong> by my side.</p>
       <p>Today we've grown into a proper countryside retreat for dogs, but the mission hasn't changed one bit: to give every pooch the very best care imaginable, in a safe, happy and stimulating place where they can just be a dog.</p>
-      <p>I'm fully insured, canine first-aid qualified and a certified puppy training specialist — but mostly, I'm just completely barking about dogs.</p>
-      <ul class="about-creds">
-        <li>✔ 5-star licensed (DAYDOG/3033/23)</li>
-        <li>✔ Fully insured</li>
-        <li>✔ Canine first-aid qualified</li>
-        <li>✔ Certified puppy training specialist</li>
+      <ul class="paw-list paw-list-light">
+        <li>5-star licensed (DAYDOG/3033/23)</li>
+        <li>Fully insured</li>
+        <li>Canine first-aid qualified</li>
+        <li>Certified puppy training specialist</li>
       </ul>
       <a href="#contact" class="btn btn-primary">Say hello</a>
     </div>
@@ -306,48 +268,49 @@
 
 <!-- ============================================================= -->
 <!--  THE CREW — photo gallery + lightbox                          -->
-<!--  EDIT: add a photo by adding another <button class="g-item">  -->
+<!--  EDIT: photos are listed in script.js (the DOG_PHOTOS list)   -->
 <!-- ============================================================= -->
-<section class="section crew" id="crew">
+<section class="band band-offwhite crew" id="crew">
   <div class="container">
     <div class="section-head reveal">
-      <p class="kicker">Meet the gang</p>
-      <h2>The Club K9 Crew 🐾</h2>
+      <h2>The Club K9 Crew</h2>
       <p class="section-sub">Some of the happy faces you'll find romping around with us. Warning: severe cuteness ahead.</p>
     </div>
   </div>
 
   <div class="gallery" id="gallery">
-    <!-- generated/looped photos -->
+    <!-- filled in by script.js -->
   </div>
 </section>
 
 <!-- ============================================================= -->
-<!--  REVIEWS                                                      -->
-<!--  EDIT: swap these sample quotes for your real customer reviews -->
+<!--  REVIEWS — white cards on an olive band                       -->
+<!--  EDIT: swap these sample quotes for your real reviews         -->
 <!-- ============================================================= -->
-<section class="section reviews" id="reviews">
+<section class="band band-olive" id="reviews">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="kicker">Tails from happy customers</p>
-      <h2>Don't just take our woof for it</h2>
+    <div class="section-head section-head-light reveal">
+      <h2>Customer Reviews</h2>
     </div>
 
     <div class="review-track" id="reviewTrack">
       <figure class="review reveal">
+        <div class="review-avatar">S</div>
         <div class="stars">★★★★★</div>
-        <blockquote>"Our spaniel absolutely bolts to the door every morning — he adores his days at Club K9. Jo treats him like one of her own and he comes home happily exhausted."</blockquote>
-        <figcaption>— Sarah &amp; Biscuit 🐶</figcaption>
+        <blockquote>Our spaniel absolutely bolts to the door every morning — he adores his days at Club K9. Jo treats him like one of her own and he comes home happily exhausted.</blockquote>
+        <figcaption>Sarah &amp; Biscuit</figcaption>
       </figure>
       <figure class="review reveal">
+        <div class="review-avatar">M</div>
         <div class="stars">★★★★★</div>
-        <blockquote>"The fields are incredible and the photos we get are gorgeous. Knowing he's running around the countryside in safe hands is worth its weight in gold."</blockquote>
-        <figcaption>— Mark &amp; Luna 🐾</figcaption>
+        <blockquote>The fields are incredible and the photos we get are gorgeous. Knowing he's running around the countryside in safe hands is worth its weight in gold.</blockquote>
+        <figcaption>Mark &amp; Luna</figcaption>
       </figure>
       <figure class="review reveal">
+        <div class="review-avatar">P</div>
         <div class="stars">★★★★★</div>
-        <blockquote>"Brilliant with our nervous rescue. The puppy training was kind and patient and she's a different dog now. Couldn't recommend Club K9 more highly."</blockquote>
-        <figcaption>— Priya &amp; Bramble 🦴</figcaption>
+        <blockquote>Brilliant with our nervous rescue. The puppy training was kind and patient and she's a different dog now. Couldn't recommend Club K9 more highly.</blockquote>
+        <figcaption>Priya &amp; Bramble</figcaption>
       </figure>
     </div>
     <p class="review-note">★ Sample reviews — ask to swap these for your real Facebook &amp; Google testimonials.</p>
@@ -358,16 +321,14 @@
 <!--  CONTACT                                                      -->
 <!--  EDIT: phone, email, address & hours all live here            -->
 <!-- ============================================================= -->
-<section class="section contact" id="contact">
+<section class="band band-pale" id="contact">
   <div class="container">
     <div class="section-head reveal">
-      <p class="kicker">Fetch us a message</p>
       <h2>Let's arrange a play date</h2>
       <p class="section-sub">Pop your details below or give us a bark — we'd love to meet you and your pup.</p>
     </div>
 
     <div class="contact-grid">
-      <!-- details -->
       <div class="contact-info reveal">
         <ul class="contact-list">
           <li><span class="ci-ic">📞</span><div><strong>Call or text</strong><a href="tel:07437677607">07437 677607</a></div></li>
@@ -421,7 +382,7 @@
           <label for="message">How can we help?</label>
           <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your pup and what you're after..."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Send my message 🐾</button>
+        <button type="submit" class="btn btn-primary btn-block">Send my message</button>
         <p class="form-hint">This opens your email app ready to send. Prefer to chat? Just call or text <a href="tel:07437677607">07437&nbsp;677607</a>.</p>
       </form>
     </div>
@@ -450,9 +411,10 @@
     </div>
     <div class="footer-links">
       <h5>Explore</h5>
-      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#services">Our Services</a>
+      <a href="#fields">The Fields</a>
       <a href="#pricing">Pricing</a>
-      <a href="#about">About Jo</a>
       <a href="#crew">The Crew</a>
       <a href="#reviews">Reviews</a>
     </div>
