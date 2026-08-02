@@ -166,7 +166,10 @@ p { margin: 0 0 1.1em; }
 /* ===== hero — full-bleed photo ================================== */
 .hero {
   position: relative;
-  min-height: min(78vh, 680px);
+  /* fill the screen below the header, however tall the window is
+     (svh keeps it honest on phones, where the address bar moves) */
+  min-height: max(460px, calc(100vh - 135px));
+  min-height: max(460px, calc(100svh - 135px));
   display: grid; place-items: center;
   text-align: center;
   overflow: hidden;
