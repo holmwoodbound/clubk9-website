@@ -109,7 +109,15 @@
   <!-- ===================== entrance driveway ===================== -->
   <path d="M210 6C208 78 194 168 196 258" stroke="#D8C7A2" stroke-width="20"
         fill="none" stroke-linecap="round"/>
-  <text x="240" y="140" font-size="13.5" font-weight="700" fill="#3B4A2C">Entrance</text>
+  <!-- an open five-bar gate where the drive comes in -->
+  <g>
+    <rect x="185" y="131" width="6" height="15" rx="2" fill="#5E4630"/>
+    <rect x="209" y="131" width="6" height="15" rx="2" fill="#5E4630"/>
+    <g transform="translate(188 139) rotate(-76)">
+      <rect x="0" y="-7" width="29" height="14" rx="2" fill="#EBDCBA" stroke="#8A6440" stroke-width="2.5"/>
+      <path d="M0 -2.4h29M0 2.4h29M0 7L29 -7" stroke="#8A6440" stroke-width="1.8" fill="none"/>
+    </g>
+  </g>
 
   <!-- ============ Happy Hill + Agility Adventures (5, 6) — share their bottom fence ============ -->
   <path d="M388 302C386 258 384 200 394 184C404 166 432 157 472 154C560 147 660 151 740 148
@@ -293,6 +301,8 @@
   </g>
 
   <!-- on-map labels -->
+  <rect class="plate" x="285" y="158" width="104" height="26" rx="13"/>
+  <text class="ptext" x="337" y="176" text-anchor="middle">Reception</text>
   <rect class="plate" x="446" y="259" width="110" height="26" rx="13"/>
   <text class="ptext" x="501" y="277" text-anchor="middle">Happy Hill</text>
   <rect class="plate" x="656" y="252" width="170" height="26" rx="13"/>
