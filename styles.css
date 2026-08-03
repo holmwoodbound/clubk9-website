@@ -412,7 +412,27 @@ p { margin: 0 0 1.1em; }
   font-style: italic; color: var(--ink); font-size: .98rem;
 }
 .review figcaption { font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: .9rem; color: var(--olive-deep); }
-.review-note { text-align: center; margin: 2.2rem 0 0; font-size: .88rem; color: rgba(255,255,255,.8); font-style: italic; }
+/* "5.0 ★★★★★ from 27 Google reviews" under the heading */
+.rating-line {
+  display: flex; align-items: center; justify-content: center;
+  gap: .55rem; flex-wrap: wrap;
+  margin: .2rem 0 0;
+}
+.rating-score {
+  font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700;
+  line-height: 1; color: #fff;
+}
+.rating-line .stars { color: var(--gold); font-size: 1.25rem; letter-spacing: .1em; }
+.rating-count { color: rgba(255,255,255,.85); font-size: .95rem; }
+
+.review-note { text-align: center; margin: 2.2rem 0 0; font-size: .95rem; }
+.review-note a {
+  color: #fff; text-decoration: none;
+  border-bottom: 2px solid rgba(255,255,255,.45);
+  padding-bottom: 2px;
+  transition: border-color .2s;
+}
+.review-note a:hover { border-bottom-color: #fff; }
 
 /* ===== contact ================================================== */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 4vw, 3.5rem); }
