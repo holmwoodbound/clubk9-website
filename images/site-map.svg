@@ -87,14 +87,18 @@
   <path d="M388 302C460 296 540 306 620 300C700 294 790 302 862 292" class="fence" stroke="#6B7C47"/>
   <!-- fence splitting the two small paddocks -->
   <path d="M618 150C623 190 615 258 620 300" class="fence" stroke="#6B7C47"/>
+  <!-- fence splitting the large dog field -->
+  <path d="M628 300C633 350 624 430 630 482" class="fence" stroke="#6B7C47"/>
 
   <!-- ============ outdoor sensory zone (4) — runs into the large dog field ============ -->
-  <path d="M276 402C272 372 288 346 316 340C348 333 380 340 390 364C400 388 398 428 388 448
-           C378 468 340 474 310 470C284 466 278 434 276 402Z" fill="#D9C67F"/>
-  <path d="M276 402C272 372 288 346 316 340C348 333 380 340 390 364C400 388 398 428 388 448
-           C378 468 340 474 310 470C284 466 278 434 276 402Z" class="fence"/>
+  <path d="M278 404C274 372 290 346 318 340C350 333 386 338 404 356
+           C410 372 410 436 402 452C388 470 344 476 312 470
+           C286 466 280 436 278 404Z" fill="#D9C67F"/>
+  <!-- fenced on three sides only, so it runs straight into the large dog field -->
+  <path d="M404 356C386 338 350 333 318 340C290 346 274 372 278 404
+           C280 436 286 466 312 470C344 476 388 470 402 452" class="fence"/>
   <g fill="#A8913F" opacity=".6">
-    <circle cx="308" cy="378" r="8"/><circle cx="348" cy="396" r="10"/><circle cx="366" cy="362" r="6"/>
+    <circle cx="310" cy="378" r="8"/><circle cx="350" cy="398" r="10"/><circle cx="372" cy="362" r="6"/>
     <circle cx="308" cy="432" r="7"/><circle cx="348" cy="444" r="8"/>
   </g>
 
@@ -195,7 +199,7 @@
   <g>
     <circle class="marker" cx="202" cy="288" r="17"/><text class="mnum" x="202" y="294" text-anchor="middle">1</text>
     <circle class="marker" cx="75" cy="228" r="17"/><text class="mnum" x="75" y="234" text-anchor="middle">2</text>
-    <circle class="marker" cx="416" cy="204" r="17"/><text class="mnum" x="416" y="210" text-anchor="middle">3</text>
+    <circle class="marker" cx="263" cy="264" r="17"/><text class="mnum" x="263" y="270" text-anchor="middle">3</text>
     <circle class="marker" cx="333" cy="406" r="17"/><text class="mnum" x="333" y="412" text-anchor="middle">4</text>
     <circle class="marker" cx="506" cy="178" r="17"/><text class="mnum" x="506" y="184" text-anchor="middle">5</text>
     <circle class="marker" cx="762" cy="178" r="17"/><text class="mnum" x="762" y="184" text-anchor="middle">5</text>
