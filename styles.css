@@ -367,6 +367,15 @@ p { margin: 0 0 1.1em; }
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
 
+/* illustrated site map */
+.site-map {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: clamp(.8rem, 2vw, 1.6rem);
+  box-shadow: var(--shadow-sm);
+}
+.site-map img { width: 100%; height: auto; display: block; }
+
 /* centred button under the "how it works" steps */
 .how-cta { text-align: center; margin-top: 2.5rem; }
 
