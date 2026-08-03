@@ -122,10 +122,10 @@ p { margin: 0 0 1.1em; }
 .site-header.scrolled .brand-bar { padding: .35rem 1rem .2rem; }
 
 .brand-logo {
-  height: 72px; width: auto;
+  height: 94px; width: auto;
   transition: height .25s;
 }
-.site-header.scrolled .brand-logo { height: 44px; }
+.site-header.scrolled .brand-logo { height: 57px; }
 
 .nav-bar { border-top: 1px solid rgba(255,255,255,.18); }
 .nav-inner { display: flex; justify-content: center; align-items: center; }
@@ -168,8 +168,8 @@ p { margin: 0 0 1.1em; }
   position: relative;
   /* fill the screen below the header, however tall the window is
      (svh keeps it honest on phones, where the address bar moves) */
-  min-height: max(460px, calc(100vh - 135px));
-  min-height: max(460px, calc(100svh - 135px));
+  min-height: max(460px, calc(100vh - 170px));   /* 170px = header height */
+  min-height: max(460px, calc(100svh - 170px));
   display: grid; place-items: center;
   text-align: center;
   overflow: hidden;
@@ -191,7 +191,7 @@ p { margin: 0 0 1.1em; }
 }
 .hero-inner { position: relative; padding: 4.5rem 1.5rem; }
 
-.hero-logo { height: 110px; width: auto; margin: 0 auto 1.6rem; }
+.hero-logo { height: 143px; width: auto; margin: 0 auto 1.6rem; }
 
 .hero h1 {
   color: #fff;
@@ -482,7 +482,7 @@ p { margin: 0 0 1.1em; }
 /* ===== footer =================================================== */
 .site-footer { background: var(--charcoal); color: var(--on-dark); padding: clamp(3rem, 6vw, 4.5rem) 0 1.5rem; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.4fr; gap: 2.5rem; }
-.footer-logo { height: 76px; width: auto; margin-bottom: 1rem; }
+.footer-logo { height: 99px; width: auto; margin-bottom: 1rem; }
 .footer-brand p { color: #B9BFAE; font-size: .95rem; max-width: 34ch; }
 
 .footer-socials { display: flex; gap: .6rem; }
@@ -594,8 +594,13 @@ p { margin: 0 0 1.1em; }
   .main-nav a { padding: .8rem .2rem; border-bottom: 1px solid rgba(255,255,255,.12); }
   .nav-cta { margin: .8rem 0 0; text-align: center; }
 
-  .brand-logo { height: 58px; }
-  .hero-logo  { height: 84px; }
+  .brand-logo { height: 75px; }
+  .hero-logo  { height: 109px; }
+  /* smaller logo up here, so the header is shorter than on desktop */
+  .hero {
+    min-height: max(420px, calc(100vh - 145px));
+    min-height: max(420px, calc(100svh - 145px));
+  }
 }
 
 @media (max-width: 560px) {
