@@ -333,6 +333,51 @@ p { margin: 0 0 1.1em; }
 .about-aside { display: grid; place-items: center; }
 .about-mascot { max-width: 260px; }
 
+/* ---- about: photo cards with a heading underneath ---- */
+.about-cards {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem;
+}
+.about-card {
+  margin: 0;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.about-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+
+.ac-photo { aspect-ratio: 4 / 3; overflow: hidden; background: var(--sage-pale); }
+.ac-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .55s ease;
+}
+.about-card:hover .ac-photo img { transform: scale(1.08); }
+
+.about-card figcaption { padding: 1.2rem 1.2rem 1.4rem; }
+.about-card h3 {
+  margin-bottom: .45em;
+  position: relative; padding-bottom: .5rem;
+}
+/* a little green rule that grows on hover */
+.about-card h3::after {
+  content: ''; position: absolute; left: 0; bottom: 0;
+  width: 30px; height: 3px; background: var(--olive);
+  transition: width .35s ease;
+}
+.about-card:hover h3::after { width: 68px; }
+.about-card figcaption p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+/* ---- about: the facts list, with Bear alongside ---- */
+.about-facts {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: clamp(1.5rem, 4vw, 3rem); align-items: center;
+  margin-top: clamp(2.2rem, 4vw, 3.2rem);
+}
+.about-facts .paw-list { columns: 2; column-gap: 2.5rem; }
+.about-facts .paw-list li { break-inside: avoid; }
+.about-facts .about-mascot { max-width: 190px; }
+
 /* ===== trust strip (counters) =================================== */
 .trust-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
@@ -828,6 +873,7 @@ p { margin: 0 0 1.1em; }
 }
 
 @media (max-width: 1000px) {
+  .about-cards   { grid-template-columns: repeat(2, 1fr); }
   .service-grid  { grid-template-columns: repeat(2, 1fr); }
   .price-grid    { grid-template-columns: repeat(2, 1fr); }
   .price-grid-3  { grid-template-columns: repeat(2, 1fr); }
@@ -850,6 +896,8 @@ p { margin: 0 0 1.1em; }
 
   .about-grid   { grid-template-columns: 1fr; }
   .about-aside  { display: none; }
+  .about-facts  { grid-template-columns: 1fr; }
+  .about-facts .about-mascot { display: none; }
   .contact-grid { grid-template-columns: 1fr; }
   .trust-grid   { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 
