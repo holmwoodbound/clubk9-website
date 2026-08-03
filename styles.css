@@ -255,6 +255,13 @@ p { margin: 0 0 1.1em; }
 .lead-copy { font-size: 1.1rem; }
 .muted-note { font-size: .93rem; color: rgba(237,239,230,.75); }
 
+/* Woof Bus fare line */
+.bus-fare { font-size: 1.05rem; margin-bottom: .6rem; }
+.bus-fare strong {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.35rem; color: var(--sage); letter-spacing: .02em;
+}
+
 /* ===== centred call-to-action band ============================== */
 .cta-band { text-align: center; }
 .cta-band p { max-width: 52ch; margin-inline: auto; color: rgba(255,255,255,.9); }
@@ -359,6 +366,9 @@ p { margin: 0 0 1.1em; }
   transition: transform .25s, box-shadow .25s;
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+
+/* with 7 cards the last one would sit alone on the left — centre it */
+.service-grid > .service-card:last-child:nth-child(3n + 1) { grid-column: 2; }
 
 .svc-num {
   display: grid; place-items: center;
