@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 86 900 554" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 86 900 590" role="img"
      aria-labelledby="mapTitle mapDesc" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, sans-serif">
   <title id="mapTitle">Map of the Club K9 site</title>
   <desc id="mapDesc">An illustrated plan of Club K9, a working farm near Rusper. From the entrance: the K9-iQ
     indoor play and enrichment barn, then the car park, then the reception and stable-block rest area which
     opens onto the small dog paddocks, and the outdoor sensory zone which opens onto the large dog play and
-    exercise field. The small and large dog areas share a fence line. Trees run around the outside.</desc>
+    exercise field. Four fenced play zones: Bunny Run and Agility Adventures for small dogs, Zoomy Zone and Fetch Field for large dogs. Trees run around the outside.</desc>
 
   <defs>
     <pattern id="grassTex" width="26" height="26" patternUnits="userSpaceOnUse">
@@ -171,9 +171,9 @@
 
   <!-- ===================== hay bales ===================== -->
   <use href="#bale" x="704" y="196"/>
-  <use href="#bale" x="470" y="256"/>
-  <use href="#bale" x="452" y="434"/>
-  <use href="#bale" x="700" y="452"/>
+  <use href="#bale" x="560" y="196"/>
+  <use href="#bale" x="415" y="400"/>
+  <use href="#bale" x="810" y="458"/>
 
   <!-- ===================== dogs ===================== -->
   <use href="#dog" x="512" y="212" fill="#5E4630"/>
@@ -201,31 +201,32 @@
     <circle class="marker" cx="75" cy="228" r="17"/><text class="mnum" x="75" y="234" text-anchor="middle">2</text>
     <circle class="marker" cx="263" cy="264" r="17"/><text class="mnum" x="263" y="270" text-anchor="middle">3</text>
     <circle class="marker" cx="333" cy="406" r="17"/><text class="mnum" x="333" y="412" text-anchor="middle">4</text>
-    <circle class="marker" cx="506" cy="178" r="17"/><text class="mnum" x="506" y="184" text-anchor="middle">5</text>
-    <circle class="marker" cx="762" cy="178" r="17"/><text class="mnum" x="762" y="184" text-anchor="middle">5</text>
-    <circle class="marker" cx="466" cy="360" r="17"/><text class="mnum" x="466" y="366" text-anchor="middle">6</text>
+    <circle class="marker" cx="470" cy="190" r="17"/><text class="mnum" x="470" y="196" text-anchor="middle">5</text>
+    <circle class="marker" cx="660" cy="180" r="17"/><text class="mnum" x="660" y="186" text-anchor="middle">6</text>
+    <circle class="marker" cx="452" cy="352" r="17"/><text class="mnum" x="452" y="358" text-anchor="middle">7</text>
+    <circle class="marker" cx="706" cy="340" r="17"/><text class="mnum" x="706" y="346" text-anchor="middle">8</text>
   </g>
 
   <!-- on-map labels -->
-  <rect class="plate" x="524" y="244" width="204" height="26" rx="13"/>
-  <text class="ptext" x="626" y="262" text-anchor="middle">Small dog paddocks</text>
-  <rect class="plate" x="556" y="418" width="208" height="26" rx="13"/>
-  <text class="ptext" x="660" y="436" text-anchor="middle">Large dog field</text>
+  <rect class="plate" x="448" y="259" width="104" height="26" rx="13"/>
+  <text class="ptext" x="500" y="277" text-anchor="middle">Bunny Run</text>
+  <rect class="plate" x="656" y="252" width="170" height="26" rx="13"/>
+  <text class="ptext" x="741" y="270" text-anchor="middle">Agility Adventures</text>
+  <rect class="plate" x="441" y="429" width="120" height="26" rx="13"/>
+  <text class="ptext" x="501" y="447" text-anchor="middle">Zoomy Zone</text>
+  <rect class="plate" x="690" y="425" width="118" height="26" rx="13"/>
+  <text class="ptext" x="749" y="443" text-anchor="middle">Fetch Field</text>
 
   <!-- ===================== legend ===================== -->
   <g>
-    <rect x="18" y="520" width="864" height="106" rx="18" fill="#F1F3E8" opacity=".93"/>
-    <g><circle class="marker" cx="48" cy="558" r="13"/><text class="mnum" x="48" y="563" text-anchor="middle">1</text>
-       <text class="ltext" x="70" y="563">Entrance &amp; car park</text></g>
-    <g><circle class="marker" cx="308" cy="558" r="13"/><text class="mnum" x="308" y="563" text-anchor="middle">2</text>
-       <text class="ltext" x="330" y="563">K9-iQ indoor arena &amp; shop</text></g>
-    <g><circle class="marker" cx="48" cy="596" r="13"/><text class="mnum" x="48" y="601" text-anchor="middle">3</text>
-       <text class="ltext" x="70" y="601">Reception, stables &amp; indoor rest</text></g>
-    <g><circle class="marker" cx="308" cy="596" r="13"/><text class="mnum" x="308" y="601" text-anchor="middle">4</text>
-       <text class="ltext" x="330" y="601">Outdoor sensory zone</text></g>
-    <g><circle class="marker" cx="624" cy="558" r="13"/><text class="mnum" x="624" y="563" text-anchor="middle">5</text>
-       <text class="ltext" x="646" y="563">Small dog play &amp; exercise</text></g>
-    <g><circle class="marker" cx="624" cy="596" r="13"/><text class="mnum" x="624" y="601" text-anchor="middle">6</text>
-       <text class="ltext" x="646" y="601">Large dog play &amp; exercise</text></g>
+    <rect x="18" y="524" width="864" height="142" rx="18" fill="#F1F3E8" opacity=".93"/>
+    <g><circle class="marker" cx="48" cy="552" r="13"/><text class="mnum" x="48" y="557" text-anchor="middle">1</text><text class="ltext" x="70" y="557">Entrance &amp; car park</text></g>
+    <g><circle class="marker" cx="470" cy="552" r="13"/><text class="mnum" x="470" y="557" text-anchor="middle">5</text><text class="ltext" x="492" y="557">Bunny Run — small dogs</text></g>
+    <g><circle class="marker" cx="48" cy="584" r="13"/><text class="mnum" x="48" y="589" text-anchor="middle">2</text><text class="ltext" x="70" y="589">K9-iQ indoor arena &amp; shop</text></g>
+    <g><circle class="marker" cx="470" cy="584" r="13"/><text class="mnum" x="470" y="589" text-anchor="middle">6</text><text class="ltext" x="492" y="589">Agility Adventures — small dogs</text></g>
+    <g><circle class="marker" cx="48" cy="616" r="13"/><text class="mnum" x="48" y="621" text-anchor="middle">3</text><text class="ltext" x="70" y="621">Reception, stables &amp; indoor rest</text></g>
+    <g><circle class="marker" cx="470" cy="616" r="13"/><text class="mnum" x="470" y="621" text-anchor="middle">7</text><text class="ltext" x="492" y="621">Zoomy Zone — large dogs</text></g>
+    <g><circle class="marker" cx="48" cy="648" r="13"/><text class="mnum" x="48" y="653" text-anchor="middle">4</text><text class="ltext" x="70" y="653">Sensory Sniffari</text></g>
+    <g><circle class="marker" cx="470" cy="648" r="13"/><text class="mnum" x="470" y="653" text-anchor="middle">8</text><text class="ltext" x="492" y="653">Fetch Field — large dogs</text></g>
   </g>
 </svg>
