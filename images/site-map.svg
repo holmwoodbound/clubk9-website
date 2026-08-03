@@ -109,16 +109,42 @@
   <!-- ===================== entrance driveway ===================== -->
   <path d="M210 6C208 78 194 168 196 258" stroke="#D8C7A2" stroke-width="20"
         fill="none" stroke-linecap="round"/>
-  <!-- sliding gate, rolled back on its track to leave the drive open -->
+  <!-- entrance: picket fence either side, sliding gate rolled back on its track -->
   <g>
-    <path d="M136 150.5H216" stroke="#9C8B6A" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <rect x="140" y="130" width="46" height="17" rx="2.5" fill="#EBDCBA" stroke="#8A6440" stroke-width="2.2"/>
-    <path d="M140 138.5h46" stroke="#8A6440" stroke-width="1.7" fill="none"/>
-    <path d="M149 130v17M158 130v17M167 130v17M176 130v17" stroke="#8A6440" stroke-width="1.6" fill="none"/>
-    <circle cx="150" cy="150" r="2.4" fill="#6B5B3F"/>
-    <circle cx="176" cy="150" r="2.4" fill="#6B5B3F"/>
-    <rect x="186" y="126" width="6" height="25" rx="2" fill="#5E4630"/>
-    <rect x="210" y="126" width="6" height="25" rx="2" fill="#5E4630"/>
+    <!-- picket fence, left of the opening -->
+    <path d="M92 134.5h88M92 145.5h88" stroke="#4F6034" stroke-width="2" fill="none"/>
+    <g fill="#7FA050" stroke="#4F6034" stroke-width="1">
+      <rect x="94" y="130" width="5" height="20" rx="2"/>
+      <rect x="106" y="130" width="5" height="20" rx="2"/>
+      <rect x="118" y="130" width="5" height="20" rx="2"/>
+      <rect x="130" y="130" width="5" height="20" rx="2"/>
+      <rect x="142" y="130" width="5" height="20" rx="2"/>
+      <rect x="154" y="130" width="5" height="20" rx="2"/>
+      <rect x="166" y="130" width="5" height="20" rx="2"/>
+      <rect x="178" y="130" width="5" height="20" rx="2"/>
+    </g>
+    <!-- picket fence, right of the opening -->
+    <path d="M222 134.5h64M222 145.5h64" stroke="#4F6034" stroke-width="2" fill="none"/>
+    <g fill="#7FA050" stroke="#4F6034" stroke-width="1">
+      <rect x="224" y="130" width="5" height="20" rx="2"/>
+      <rect x="236" y="130" width="5" height="20" rx="2"/>
+      <rect x="248" y="130" width="5" height="20" rx="2"/>
+      <rect x="260" y="130" width="5" height="20" rx="2"/>
+      <rect x="272" y="130" width="5" height="20" rx="2"/>
+      <rect x="284" y="130" width="5" height="20" rx="2"/>
+    </g>
+
+    <!-- the gate runs on a track in front of the fence -->
+    <path d="M128 151.5H220" stroke="#9C8B6A" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <rect x="132" y="129" width="48" height="19" rx="2.5" fill="#EBDCBA" stroke="#8A6440" stroke-width="2.2"/>
+    <path d="M132 138.5h48" stroke="#8A6440" stroke-width="1.7" fill="none"/>
+    <path d="M142 129v19M152 129v19M162 129v19M172 129v19" stroke="#8A6440" stroke-width="1.6" fill="none"/>
+    <circle cx="142" cy="151" r="2.5" fill="#6B5B3F"/>
+    <circle cx="170" cy="151" r="2.5" fill="#6B5B3F"/>
+
+    <!-- gate posts, set wider than the drive -->
+    <rect x="180" y="124" width="7" height="28" rx="2.5" fill="#5E4630"/>
+    <rect x="215" y="124" width="7" height="28" rx="2.5" fill="#5E4630"/>
   </g>
 
   <!-- ============ Happy Hill + Agility Adventures (5, 6) — share their bottom fence ============ -->
@@ -216,23 +242,20 @@
 
   <!-- ============ picket fence between the car park and reception ============ -->
   <g>
-    <path d="M259 198V404M267 198V404" stroke="#4F6034" stroke-width="2.5" fill="none"/>
+    <path d="M260 200V368M266 200V368" stroke="#4F6034" stroke-width="2.2" fill="none"/>
     <g fill="#7FA050" stroke="#4F6034" stroke-width="1">
-      <rect x="253" y="202" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="216" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="230" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="244" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="258" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="272" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="286" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="300" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="314" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="328" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="342" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="356" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="370" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="384" width="20" height="5" rx="2.5"/>
-      <rect x="253" y="398" width="20" height="5" rx="2.5"/>
+      <rect x="256" y="202" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="216" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="230" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="244" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="258" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="272" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="286" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="300" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="314" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="328" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="342" width="14" height="5" rx="2.5"/>
+      <rect x="256" y="356" width="14" height="5" rx="2.5"/>
     </g>
   </g>
 
@@ -291,7 +314,7 @@
     <use href="#tree" transform="translate(672 502) scale(1.14)"/><use href="#tree4" transform="translate(614 494) scale(0.84)"/><use href="#tree2" x="556" y="502"/>
     <use href="#tree" transform="translate(498 494) scale(0.97)"/><use href="#tree4" transform="translate(440 500) scale(0.86)"/><use href="#tree3" transform="translate(384 492) scale(0.86)"/>
     <use href="#tree2" transform="translate(326 492) scale(1.14)"/><use href="#tree" transform="translate(268 496) scale(0.82)"/><use href="#tree" transform="translate(206 498) scale(1.01)"/>
-    <use href="#tree" transform="translate(14 516) scale(0.85)"/><use href="#tree2" transform="translate(12 196) scale(1.15)"/><use href="#tree2" transform="translate(140 150) scale(0.96)"/>
+    <use href="#tree" transform="translate(14 516) scale(0.85)"/><use href="#tree2" transform="translate(12 196) scale(1.15)"/><use href="#tree2" transform="translate(104 186) scale(0.96)"/>
   </g>
 
   <!-- ===================== markers ===================== -->
