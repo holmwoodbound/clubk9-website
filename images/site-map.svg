@@ -122,6 +122,16 @@
       <rect x="354" y="224" width="32" height="70" rx="4" fill="#6E4F33"/>
       <rect x="354" y="224" width="32" height="31" rx="4" fill="#3B2C1D"/>
     </g>
+    <!-- someone watching the yard from the middle stable -->
+    <g transform="translate(332 243)" stroke="none">
+      <path d="M-11 -7C-16 -16 -9 -19 -5 -12Z" fill="#C9A24B"/>
+      <path d="M11 -7C16 -16 9 -19 5 -12Z" fill="#C9A24B"/>
+      <circle r="11" fill="#D9B368"/>
+      <ellipse cy="5.5" rx="6.5" ry="5" fill="#EFE0BA"/>
+      <circle cx="-4.4" cy="-2.5" r="1.8" fill="#3B2C1D"/>
+      <circle cx="4.4" cy="-2.5" r="1.8" fill="#3B2C1D"/>
+      <circle cy="3.6" r="2" fill="#3B2C1D"/>
+    </g>
   </g>
 
   <!-- ============ car park (1) — reversed L, foot runs in front of the K9-iQ barn ============ -->
@@ -184,10 +194,10 @@
   <use href="#bale" x="810" y="458"/>
 
   <!-- ===================== dogs ===================== -->
-  <use href="#dog" x="512" y="212" fill="#5E4630"/>
-  <use href="#dog" x="778" y="238" fill="#F2EFE6"/>
-  <use href="#dog" x="546" y="392" fill="#C9A24B"/>
-  <use href="#dog" x="796" y="366" fill="#3F3128"/>
+  <use href="#dog" transform="translate(525 232) scale(-1 1)" fill="#F2EFE6"/>
+  <use href="#dog" transform="translate(760 225)" fill="#C9A24B"/>
+  <use href="#dog" transform="translate(540 380)" fill="#3F3128"/>
+  <use href="#dog" transform="translate(762 382) scale(-1 1)" fill="#5E4630"/>
 
   <!-- ===================== trees round the outer perimeter ===================== -->
   <g>
