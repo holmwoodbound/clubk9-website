@@ -465,6 +465,13 @@ p { margin: 0 0 1.1em; }
 }
 .member-daily strong { color: var(--olive-deep); font-size: 1rem; }
 
+/* explains how the "works out at" figures are calculated */
+.member-basis {
+  text-align: center;
+  margin: 1.4rem 0 0;
+  font-size: .88rem; color: var(--muted); font-style: italic;
+}
+
 /* ad hoc day rate, sitting under the tiers */
 .adhoc-strip {
   display: flex; align-items: center; justify-content: space-between;
