@@ -125,9 +125,13 @@
       const subject = `Club K9 enquiry from ${v('name') || 'a dog lover'}`;
       const body =
 `Name: ${v('name')}
-Dog's name: ${v('dog')}
 Email: ${v('email')}
 Phone: ${v('phone')}
+
+Dog's name: ${v('dog')}
+Breed: ${v('breed')}
+Age: ${v('age')}
+Gender: ${v('gender')}
 
 ${v('message')}`;
       window.location.href =
