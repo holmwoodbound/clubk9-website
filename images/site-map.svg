@@ -41,6 +41,16 @@
             stroke="#A8913F" stroke-width="2" fill="none"/>
     </g>
 
+    <!-- a little dog house -->
+    <g id="doghouse">
+      <rect x="-14" y="-2" width="28" height="17" rx="2" fill="#B08056"/>
+      <rect x="-14" y="-2" width="28" height="17" rx="2" fill="none" stroke="#6B432B" stroke-width="2"/>
+      <path d="M-17 -1L0 -15L17 -1Z" fill="#8A5A3C"/>
+      <path d="M-17 -1L0 -15L17 -1Z" fill="none" stroke="#6B432B" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-5.5 15V6C-5.5 1.6 5.5 1.6 5.5 6V15Z" fill="#3B2C1D"/>
+      <circle cx="0" cy="-5.5" r="2.4" fill="#EFE0BA"/>
+    </g>
+
     <!-- an agility see-saw -->
     <g id="seesaw">
       <path d="M-7 11L0 -1L7 11Z" fill="#8A6440"/>
@@ -209,7 +219,7 @@
   <use href="#bale" x="704" y="196"/>
   <use href="#hill" x="560" y="200"/>
   <use href="#seesaw" x="418" y="398"/>
-  <use href="#bale" x="810" y="458"/>
+  <use href="#doghouse" x="818" y="348"/>
 
   <!-- ===================== dogs ===================== -->
   <use href="#dog" transform="translate(525 232) scale(-1 1)" fill="#F2EFE6"/>
