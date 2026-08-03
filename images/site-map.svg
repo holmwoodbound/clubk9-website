@@ -109,14 +109,16 @@
   <!-- ===================== entrance driveway ===================== -->
   <path d="M210 6C208 78 194 168 196 258" stroke="#D8C7A2" stroke-width="20"
         fill="none" stroke-linecap="round"/>
-  <!-- an open five-bar gate where the drive comes in -->
+  <!-- sliding gate, rolled back on its track to leave the drive open -->
   <g>
-    <rect x="185" y="131" width="6" height="15" rx="2" fill="#5E4630"/>
-    <rect x="209" y="131" width="6" height="15" rx="2" fill="#5E4630"/>
-    <g transform="translate(188 139) rotate(-76)">
-      <rect x="0" y="-7" width="29" height="14" rx="2" fill="#EBDCBA" stroke="#8A6440" stroke-width="2.5"/>
-      <path d="M0 -2.4h29M0 2.4h29M0 7L29 -7" stroke="#8A6440" stroke-width="1.8" fill="none"/>
-    </g>
+    <path d="M136 150.5H216" stroke="#9C8B6A" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <rect x="140" y="130" width="46" height="17" rx="2.5" fill="#EBDCBA" stroke="#8A6440" stroke-width="2.2"/>
+    <path d="M140 138.5h46" stroke="#8A6440" stroke-width="1.7" fill="none"/>
+    <path d="M149 130v17M158 130v17M167 130v17M176 130v17" stroke="#8A6440" stroke-width="1.6" fill="none"/>
+    <circle cx="150" cy="150" r="2.4" fill="#6B5B3F"/>
+    <circle cx="176" cy="150" r="2.4" fill="#6B5B3F"/>
+    <rect x="186" y="126" width="6" height="25" rx="2" fill="#5E4630"/>
+    <rect x="210" y="126" width="6" height="25" rx="2" fill="#5E4630"/>
   </g>
 
   <!-- ============ Happy Hill + Agility Adventures (5, 6) — share their bottom fence ============ -->
