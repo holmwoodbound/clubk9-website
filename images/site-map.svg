@@ -242,20 +242,20 @@
 
   <!-- ============ picket fence between the car park and reception ============ -->
   <g>
-    <path d="M260 200V368M266 200V368" stroke="#4F6034" stroke-width="2.2" fill="none"/>
+    <path d="M268 200V368M274 200V368" stroke="#4F6034" stroke-width="2.2" fill="none"/>
     <g fill="#7FA050" stroke="#4F6034" stroke-width="1">
-      <rect x="256" y="202" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="216" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="230" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="244" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="258" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="272" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="286" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="300" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="314" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="328" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="342" width="14" height="5" rx="2.5"/>
-      <rect x="256" y="356" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="202" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="216" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="230" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="244" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="258" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="272" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="286" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="300" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="314" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="328" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="342" width="14" height="5" rx="2.5"/>
+      <rect x="264" y="356" width="14" height="5" rx="2.5"/>
     </g>
   </g>
 
