@@ -3,8 +3,8 @@
   <title id="mapTitle">Map of the Club K9 site</title>
   <desc id="mapDesc">An illustrated plan of Club K9, a working farm near Rusper. From the entrance: the K9-iQ
     indoor play and enrichment barn, then the car park, then the reception and stable-block rest area which
-    opens onto the Bunny Run and Agility Adventures paddocks, and the Sensory Sniffari which opens onto the
-    Zoomy Zone and Wild Wood. Four fenced play zones: Bunny Run, Agility Adventures, Zoomy Zone and Wild Wood. Trees run around the outside.</desc>
+    opens onto the Happy Hill and Agility Adventures paddocks, and the Sensory Sniffari which opens onto the
+    Zoomy Zone and Wild Wood. Four fenced play zones: Happy Hill, Agility Adventures, Zoomy Zone and Wild Wood. Trees run around the outside.</desc>
 
   <defs>
     <pattern id="grassTex" width="26" height="26" patternUnits="userSpaceOnUse">
@@ -41,6 +41,14 @@
             stroke="#A8913F" stroke-width="2" fill="none"/>
     </g>
 
+    <!-- a little grassy hill -->
+    <g id="hill">
+      <path d="M-26 12C-20 -3 -10 -14 0 -14C10 -14 20 -3 26 12Z"
+            fill="#9CB16E" stroke="#6E8046" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-12 7C-9 0 -4 -5 1 -6M6 8C8 3 11 -1 15 -3"
+            stroke="#7E9451" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+
     <style>
       .plate  { fill:#FFFDF8; opacity:.95; }
       .ptext  { fill:#3B4A2C; font-size:15px; font-weight:700; }
@@ -60,7 +68,7 @@
         fill="none" stroke-linecap="round"/>
   <text x="240" y="140" font-size="13.5" font-weight="700" fill="#3B4A2C">Entrance</text>
 
-  <!-- ============ Bunny Run + Agility Adventures (5, 6) — share their bottom fence ============ -->
+  <!-- ============ Happy Hill + Agility Adventures (5, 6) — share their bottom fence ============ -->
   <path d="M388 302C386 258 384 200 394 184C404 166 432 157 472 154C560 147 660 151 740 148
            C802 146 850 156 860 178C870 202 866 250 862 292C790 302 700 294 620 300
            C540 306 460 296 388 302Z" fill="#CBD9A6"/>
@@ -85,7 +93,7 @@
            C386 372 386 330 388 302Z" class="fence"/>
   <!-- the fence they share -->
   <path d="M388 302C460 296 540 306 620 300C700 294 790 302 862 292" class="fence" stroke="#6B7C47"/>
-  <!-- fence splitting Bunny Run from Agility Adventures -->
+  <!-- fence splitting Happy Hill from Agility Adventures -->
   <path d="M618 150C623 190 615 258 620 300" class="fence" stroke="#6B7C47"/>
   <!-- fence splitting Zoomy Zone from Wild Wood -->
   <path d="M628 300C633 350 624 430 630 482" class="fence" stroke="#6B7C47"/>
@@ -171,7 +179,7 @@
 
   <!-- ===================== hay bales ===================== -->
   <use href="#bale" x="704" y="196"/>
-  <use href="#bale" x="560" y="196"/>
+  <use href="#hill" x="560" y="200"/>
   <use href="#bale" x="415" y="400"/>
   <use href="#bale" x="810" y="458"/>
 
@@ -208,8 +216,8 @@
   </g>
 
   <!-- on-map labels -->
-  <rect class="plate" x="448" y="259" width="104" height="26" rx="13"/>
-  <text class="ptext" x="500" y="277" text-anchor="middle">Bunny Run</text>
+  <rect class="plate" x="446" y="259" width="110" height="26" rx="13"/>
+  <text class="ptext" x="501" y="277" text-anchor="middle">Happy Hill</text>
   <rect class="plate" x="656" y="252" width="170" height="26" rx="13"/>
   <text class="ptext" x="741" y="270" text-anchor="middle">Agility Adventures</text>
   <rect class="plate" x="441" y="429" width="120" height="26" rx="13"/>
@@ -221,7 +229,7 @@
   <g>
     <rect x="18" y="524" width="864" height="142" rx="18" fill="#F1F3E8" opacity=".93"/>
     <g><circle class="marker" cx="48" cy="552" r="13"/><text class="mnum" x="48" y="557" text-anchor="middle">1</text><text class="ltext" x="70" y="557">Entrance &amp; car park</text></g>
-    <g><circle class="marker" cx="470" cy="552" r="13"/><text class="mnum" x="470" y="557" text-anchor="middle">5</text><text class="ltext" x="492" y="557">Bunny Run</text></g>
+    <g><circle class="marker" cx="470" cy="552" r="13"/><text class="mnum" x="470" y="557" text-anchor="middle">5</text><text class="ltext" x="492" y="557">Happy Hill</text></g>
     <g><circle class="marker" cx="48" cy="584" r="13"/><text class="mnum" x="48" y="589" text-anchor="middle">2</text><text class="ltext" x="70" y="589">K9-iQ indoor arena &amp; shop</text></g>
     <g><circle class="marker" cx="470" cy="584" r="13"/><text class="mnum" x="470" y="589" text-anchor="middle">6</text><text class="ltext" x="492" y="589">Agility Adventures</text></g>
     <g><circle class="marker" cx="48" cy="616" r="13"/><text class="mnum" x="48" y="621" text-anchor="middle">3</text><text class="ltext" x="70" y="621">Reception, stables &amp; indoor rest</text></g>
