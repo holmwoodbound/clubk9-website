@@ -177,7 +177,7 @@
 
 
   <!-- ===================== K9-iQ arena (2) ===================== -->
-  <g transform="translate(22.5 92.1) scale(0.7)">
+  <g transform="translate(9.375 92.1) scale(0.875 0.7)">
     <path d="M16 270L40 236L75 218L110 236L134 270Z" fill="#5E4630"/>
     <rect x="28" y="266" width="94" height="98" rx="6" fill="#8A6440"/>
     <rect x="66" y="242" width="18" height="16" rx="2" fill="#3B2C1D"/>
