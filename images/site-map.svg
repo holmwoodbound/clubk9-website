@@ -41,6 +41,29 @@
             stroke="#A8913F" stroke-width="2" fill="none"/>
     </g>
 
+    <!-- a conifer -->
+    <g id="tree2">
+      <rect x="-2.5" y="6" width="5" height="14" rx="2" fill="#5E4630"/>
+      <path d="M0 -19L9 -5H-9Z" fill="#3C5028"/>
+      <path d="M0 -11L11 7H-11Z" fill="#476031"/>
+    </g>
+
+    <!-- a small bushy one -->
+    <g id="tree3">
+      <rect x="-2.5" y="4" width="5" height="12" rx="2" fill="#5E4630"/>
+      <circle cx="-5" cy="1" r="6.5" fill="#54683A"/>
+      <circle cx="5" cy="2" r="6" fill="#62773F"/>
+      <circle cx="0" cy="-4" r="7.5" fill="#5A7038"/>
+    </g>
+
+    <!-- a broad, flat-crowned one -->
+    <g id="tree4">
+      <rect x="-3" y="4" width="6" height="15" rx="2.5" fill="#5E4630"/>
+      <ellipse cx="0" cy="-4" rx="14" ry="8.5" fill="#4A5E2F"/>
+      <ellipse cx="-7" cy="1" rx="7.5" ry="5.5" fill="#405328"/>
+      <ellipse cx="7" cy="0" rx="7.5" ry="5.5" fill="#546A36"/>
+    </g>
+
     <!-- a little dog house -->
     <g id="doghouse">
       <rect x="-14" y="-2" width="28" height="17" rx="2" fill="#B08056"/>
@@ -229,16 +252,16 @@
 
   <!-- ===================== trees round the outer perimeter ===================== -->
   <g>
-    <use href="#tree" x="404" y="122"/><use href="#tree" x="462" y="114"/><use href="#tree" x="520" y="120"/>
-    <use href="#tree" x="578" y="112"/><use href="#tree" x="636" y="120"/><use href="#tree" x="694" y="112"/>
-    <use href="#tree" x="752" y="120"/><use href="#tree" x="812" y="116"/><use href="#tree" x="866" y="128"/>
-    <use href="#tree" x="884" y="188"/><use href="#tree" x="890" y="248"/><use href="#tree" x="884" y="308"/>
-    <use href="#tree" x="890" y="366"/><use href="#tree" x="882" y="426"/>
-    <use href="#tree" x="846" y="494"/><use href="#tree" x="788" y="502"/><use href="#tree" x="730" y="494"/>
-    <use href="#tree" x="672" y="502"/><use href="#tree" x="614" y="494"/><use href="#tree" x="556" y="502"/>
-    <use href="#tree" x="498" y="494"/><use href="#tree" x="440" y="500"/><use href="#tree" x="384" y="492"/>
-    <use href="#tree" x="326" y="492"/><use href="#tree" x="268" y="496"/><use href="#tree" x="206" y="498"/>
-    <use href="#tree" x="14" y="516"/><use href="#tree" x="12" y="196"/><use href="#tree" x="140" y="150"/>
+    <use href="#tree2" transform="translate(404 122) scale(0.95)"/><use href="#tree" transform="translate(462 114) scale(1.13)"/><use href="#tree" x="520" y="120"/>
+    <use href="#tree4" transform="translate(578 112) scale(0.85)"/><use href="#tree2" transform="translate(636 120) scale(1.04)"/><use href="#tree" transform="translate(694 112) scale(0.96)"/>
+    <use href="#tree3" transform="translate(752 120) scale(0.98)"/><use href="#tree3" transform="translate(812 116) scale(0.88)"/><use href="#tree" transform="translate(866 128) scale(0.86)"/>
+    <use href="#tree2" transform="translate(884 188) scale(1.15)"/><use href="#tree3" transform="translate(890 248) scale(1.1)"/><use href="#tree2" transform="translate(884 308) scale(1.09)"/>
+    <use href="#tree" transform="translate(890 366) scale(0.92)"/><use href="#tree3" transform="translate(882 426) scale(1.08)"/>
+    <use href="#tree2" transform="translate(846 494) scale(0.85)"/><use href="#tree" transform="translate(788 502) scale(0.9)"/><use href="#tree" transform="translate(730 494) scale(1.11)"/>
+    <use href="#tree" transform="translate(672 502) scale(1.14)"/><use href="#tree4" transform="translate(614 494) scale(0.84)"/><use href="#tree2" x="556" y="502"/>
+    <use href="#tree" transform="translate(498 494) scale(0.97)"/><use href="#tree4" transform="translate(440 500) scale(0.86)"/><use href="#tree3" transform="translate(384 492) scale(0.86)"/>
+    <use href="#tree2" transform="translate(326 492) scale(1.14)"/><use href="#tree" transform="translate(268 496) scale(0.82)"/><use href="#tree" transform="translate(206 498) scale(1.01)"/>
+    <use href="#tree" transform="translate(14 516) scale(0.85)"/><use href="#tree2" transform="translate(12 196) scale(1.15)"/><use href="#tree2" transform="translate(140 150) scale(0.96)"/>
   </g>
 
   <!-- ===================== markers ===================== -->
