@@ -3,8 +3,8 @@
   <title id="mapTitle">Map of the Club K9 site</title>
   <desc id="mapDesc">An illustrated plan of Club K9, a working farm near Rusper. From the entrance: the K9-iQ
     indoor play and enrichment barn, then the car park, then the reception and stable-block rest area which
-    opens onto the small dog paddocks, and the outdoor sensory zone which opens onto the large dog play and
-    exercise field. Four fenced play zones: Bunny Run and Agility Adventures for small dogs, Zoomy Zone and Fetch Field for large dogs. Trees run around the outside.</desc>
+    opens onto the Bunny Run and Agility Adventures paddocks, and the Sensory Sniffari which opens onto the
+    Zoomy Zone and Wild Wood. Four fenced play zones: Bunny Run, Agility Adventures, Zoomy Zone and Wild Wood. Trees run around the outside.</desc>
 
   <defs>
     <pattern id="grassTex" width="26" height="26" patternUnits="userSpaceOnUse">
@@ -60,12 +60,12 @@
         fill="none" stroke-linecap="round"/>
   <text x="240" y="140" font-size="13.5" font-weight="700" fill="#3B4A2C">Entrance</text>
 
-  <!-- ============ small dog paddocks (5) — share their bottom fence with (6) ============ -->
+  <!-- ============ Bunny Run + Agility Adventures (5, 6) — share their bottom fence ============ -->
   <path d="M388 302C386 258 384 200 394 184C404 166 432 157 472 154C560 147 660 151 740 148
            C802 146 850 156 860 178C870 202 866 250 862 292C790 302 700 294 620 300
            C540 306 460 296 388 302Z" fill="#CBD9A6"/>
 
-  <!-- ============ large dog field (6) — top edge is that same fence ============ -->
+  <!-- ============ Zoomy Zone + Wild Wood (7, 8) — top edge is that same fence ============ -->
   <path d="M388 302C460 296 540 306 620 300C700 294 790 302 862 292C878 318 876 398 868 436
            C860 466 800 478 730 480C630 483 520 480 456 474C414 470 390 452 388 416
            C386 372 386 330 388 302Z" fill="#B0C486"/>
@@ -85,16 +85,16 @@
            C386 372 386 330 388 302Z" class="fence"/>
   <!-- the fence they share -->
   <path d="M388 302C460 296 540 306 620 300C700 294 790 302 862 292" class="fence" stroke="#6B7C47"/>
-  <!-- fence splitting the two small paddocks -->
+  <!-- fence splitting Bunny Run from Agility Adventures -->
   <path d="M618 150C623 190 615 258 620 300" class="fence" stroke="#6B7C47"/>
-  <!-- fence splitting the large dog field -->
+  <!-- fence splitting Zoomy Zone from Wild Wood -->
   <path d="M628 300C633 350 624 430 630 482" class="fence" stroke="#6B7C47"/>
 
-  <!-- ============ outdoor sensory zone (4) — runs into the large dog field ============ -->
+  <!-- ============ Sensory Sniffari (4) — runs into the Zoomy Zone ============ -->
   <path d="M278 404C274 372 290 346 318 340C350 333 386 338 404 356
            C410 372 410 436 402 452C388 470 344 476 312 470
            C286 466 280 436 278 404Z" fill="#D9C67F"/>
-  <!-- fenced on three sides only, so it runs straight into the large dog field -->
+  <!-- fenced on three sides only, so it runs straight into the Zoomy Zone -->
   <path d="M404 356C386 338 350 333 318 340C290 346 274 372 278 404
            C280 436 286 466 312 470C344 476 388 470 402 452" class="fence"/>
   <g fill="#A8913F" opacity=".6">
@@ -214,19 +214,19 @@
   <text class="ptext" x="741" y="270" text-anchor="middle">Agility Adventures</text>
   <rect class="plate" x="441" y="429" width="120" height="26" rx="13"/>
   <text class="ptext" x="501" y="447" text-anchor="middle">Zoomy Zone</text>
-  <rect class="plate" x="690" y="425" width="118" height="26" rx="13"/>
-  <text class="ptext" x="749" y="443" text-anchor="middle">Fetch Field</text>
+  <rect class="plate" x="688" y="425" width="122" height="26" rx="13"/>
+  <text class="ptext" x="749" y="443" text-anchor="middle">Wild Wood</text>
 
   <!-- ===================== legend ===================== -->
   <g>
     <rect x="18" y="524" width="864" height="142" rx="18" fill="#F1F3E8" opacity=".93"/>
     <g><circle class="marker" cx="48" cy="552" r="13"/><text class="mnum" x="48" y="557" text-anchor="middle">1</text><text class="ltext" x="70" y="557">Entrance &amp; car park</text></g>
-    <g><circle class="marker" cx="470" cy="552" r="13"/><text class="mnum" x="470" y="557" text-anchor="middle">5</text><text class="ltext" x="492" y="557">Bunny Run — small dogs</text></g>
+    <g><circle class="marker" cx="470" cy="552" r="13"/><text class="mnum" x="470" y="557" text-anchor="middle">5</text><text class="ltext" x="492" y="557">Bunny Run</text></g>
     <g><circle class="marker" cx="48" cy="584" r="13"/><text class="mnum" x="48" y="589" text-anchor="middle">2</text><text class="ltext" x="70" y="589">K9-iQ indoor arena &amp; shop</text></g>
-    <g><circle class="marker" cx="470" cy="584" r="13"/><text class="mnum" x="470" y="589" text-anchor="middle">6</text><text class="ltext" x="492" y="589">Agility Adventures — small dogs</text></g>
+    <g><circle class="marker" cx="470" cy="584" r="13"/><text class="mnum" x="470" y="589" text-anchor="middle">6</text><text class="ltext" x="492" y="589">Agility Adventures</text></g>
     <g><circle class="marker" cx="48" cy="616" r="13"/><text class="mnum" x="48" y="621" text-anchor="middle">3</text><text class="ltext" x="70" y="621">Reception, stables &amp; indoor rest</text></g>
-    <g><circle class="marker" cx="470" cy="616" r="13"/><text class="mnum" x="470" y="621" text-anchor="middle">7</text><text class="ltext" x="492" y="621">Zoomy Zone — large dogs</text></g>
+    <g><circle class="marker" cx="470" cy="616" r="13"/><text class="mnum" x="470" y="621" text-anchor="middle">7</text><text class="ltext" x="492" y="621">Zoomy Zone</text></g>
     <g><circle class="marker" cx="48" cy="648" r="13"/><text class="mnum" x="48" y="653" text-anchor="middle">4</text><text class="ltext" x="70" y="653">Sensory Sniffari</text></g>
-    <g><circle class="marker" cx="470" cy="648" r="13"/><text class="mnum" x="470" y="653" text-anchor="middle">8</text><text class="ltext" x="492" y="653">Fetch Field — large dogs</text></g>
+    <g><circle class="marker" cx="470" cy="648" r="13"/><text class="mnum" x="470" y="653" text-anchor="middle">8</text><text class="ltext" x="492" y="653">Wild Wood</text></g>
   </g>
 </svg>
