@@ -24,9 +24,11 @@ The site needs to be **served by a little local web server** so the browser can 
 **Option B — do it yourself.** Open **Terminal** and run:
 ```
 cd ~/Sites/clubk9-website
-python3 -m http.server 8000
+python3 serve.py
 ```
 Then open **http://localhost:8000**. Press `Ctrl + C` in Terminal to stop it.
+
+> 💡 Use `serve.py`, **not** `python3 -m http.server`. They both work, but `serve.py` tells your browser never to cache anything — so an ordinary refresh (`Cmd + R`) always shows the newest styling. With the plain one, browsers hang on to the old `styles.css` and you have to force a reload with `Cmd + Shift + R`.
 
 > 💡 Opening `index.html` by double-click also works, but the local server is the most reliable way to see everything exactly as it'll look live.
 

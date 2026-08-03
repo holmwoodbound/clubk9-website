@@ -1,0 +1,12 @@
+# Netlify caching rules for the live site.
+#
+# "must-revalidate" tells browsers to check with the server every time.
+# If nothing has changed the server replies "still the same" (a tiny,
+# fast response) and the browser reuses what it already has. If something
+# HAS changed, the visitor gets the new version straight away.
+#
+# Without this, someone who visited last week could still see the old
+# styling after we publish a change.
+
+/*
+  Cache-Control: public, max-age=0, must-revalidate
