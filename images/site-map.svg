@@ -260,8 +260,12 @@
     <path d="M50 298L33 290L33 372L50 364Z" fill="none" stroke="#5C3D22" stroke-width="2" stroke-linejoin="round"/>
     <path d="M41.5 294v78" stroke="#5C3D22" stroke-width="1.6" fill="none"/>
 
-    <rect x="28" y="368" width="94" height="28" rx="12" fill="#6B4A2E"/>
-    <text x="75" y="387" font-size="12" font-weight="700" fill="#F2EFE6" text-anchor="middle">K9-iQ</text>
+  </g>
+
+  <!-- K9-iQ sign, drawn outside the barn's transform so it isn't distorted -->
+  <g>
+    <rect x="31" y="357" width="88" height="28" rx="8" fill="#3F5331" stroke="#2E3F24" stroke-width="2"/>
+    <text x="75" y="376" font-size="14" font-weight="700" fill="#F2EFE6" text-anchor="middle">K9-iQ</text>
   </g>
 
   <!-- ===================== hay bales ===================== -->
