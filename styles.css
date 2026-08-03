@@ -427,6 +427,14 @@ p { margin: 0 0 1.1em; }
   text-transform: uppercase; letter-spacing: .08em;
   color: var(--muted); margin-right: .15rem;
 }
+/* used where there's no single figure — e.g. "Membership packages" */
+.price-varies {
+  display: block;
+  font-size: 1.6rem; font-weight: 600; line-height: 1.15;
+  color: var(--olive-deep);
+}
+/* reserves the same height as a price, so all four cards stay level */
+.price-blank { min-height: 2.8rem; }
 .price-unit { font-size: .95rem; color: var(--muted); margin-left: .2rem; }
 .price-alt { color: var(--olive); font-weight: 700; font-size: .92rem; margin-bottom: 1.2rem; }
 
