@@ -367,6 +367,9 @@ p { margin: 0 0 1.1em; }
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
 
+/* centred button under the "how it works" steps */
+.how-cta { text-align: center; margin-top: 2.5rem; }
+
 /* with 7 cards the last one would sit alone on the left — centre it */
 .service-grid > .service-card:last-child:nth-child(3n + 1) { grid-column: 2; }
 
