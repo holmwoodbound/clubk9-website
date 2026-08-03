@@ -229,12 +229,28 @@
 
   <!-- ===================== K9-iQ arena (2) ===================== -->
   <g transform="translate(9.375 92.1) scale(0.875 0.7)">
-    <path d="M16 270L40 236L75 218L110 236L134 270Z" fill="#5E4630"/>
-    <rect x="28" y="266" width="94" height="98" rx="6" fill="#8A6440"/>
-    <rect x="66" y="242" width="18" height="16" rx="2" fill="#3B2C1D"/>
-    <rect x="50" y="298" width="50" height="66" rx="3" fill="#6E4F33"/>
-    <path d="M50 298l50 66M100 298l-50 66M75 298v66" stroke="#4A3423" stroke-width="2.5" fill="none"/>
-    <rect x="28" y="368" width="94" height="28" rx="12" fill="#6E4F33"/>
+    <!-- dark green barn, brown roof and doors, left door standing open -->
+    <rect x="28" y="266" width="94" height="98" rx="6" fill="#3F5331"/>
+    <rect x="28" y="266" width="94" height="98" rx="6" fill="none" stroke="#2E3F24" stroke-width="2"/>
+    <path d="M16 270L40 236L75 218L110 236L134 270Z" fill="#6B4A2E"/>
+    <path d="M16 270L40 236L75 218L110 236L134 270Z" fill="none" stroke="#4E351F" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="66" y="242" width="18" height="16" rx="2" fill="#241B14"/>
+
+    <!-- the doorway itself, with a bit of warmth spilling out -->
+    <rect x="50" y="298" width="50" height="66" rx="3" fill="#241B14"/>
+    <rect x="54" y="326" width="20" height="38" fill="#7A6440" opacity=".45"/>
+
+    <!-- right leaf, closed -->
+    <rect x="74" y="298" width="26" height="66" rx="2" fill="#8A5F3A"/>
+    <path d="M74 298l26 66M100 298l-26 66" stroke="#6B4526" stroke-width="2" fill="none"/>
+    <rect x="74" y="298" width="26" height="66" rx="2" fill="none" stroke="#6B4526" stroke-width="2"/>
+
+    <!-- left leaf, swung open -->
+    <path d="M50 298L33 290L33 372L50 364Z" fill="#7A5232"/>
+    <path d="M50 298L33 290L33 372L50 364Z" fill="none" stroke="#5C3D22" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M41.5 294v78" stroke="#5C3D22" stroke-width="1.6" fill="none"/>
+
+    <rect x="28" y="368" width="94" height="28" rx="12" fill="#6B4A2E"/>
     <text x="75" y="387" font-size="12" font-weight="700" fill="#F2EFE6" text-anchor="middle">K9-iQ</text>
   </g>
 
