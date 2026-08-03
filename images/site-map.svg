@@ -2,7 +2,7 @@
      aria-labelledby="mapTitle mapDesc" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, sans-serif">
   <title id="mapTitle">Map of the Club K9 site</title>
   <desc id="mapDesc">An illustrated plan of Club K9, a working farm near Rusper. From the entrance: the K9-iQ
-    indoor play and enrichment barn, then the car park, then the reception and stable-block rest area which
+    indoor play and enrichment barn, then the car park, then the reception, handover and rest area which
     opens onto the Happy Hill and Agility Adventures paddocks, and the Sensory Sniffari which opens onto the
     Zoomy Zone and Wild Wood. Four fenced play zones: Happy Hill, Agility Adventures, Zoomy Zone and Wild Wood. Trees run around the outside.</desc>
 
@@ -330,8 +330,8 @@
   </g>
 
   <!-- on-map labels -->
-  <rect class="plate" x="285" y="158" width="104" height="26" rx="13"/>
-  <text class="ptext" x="337" y="176" text-anchor="middle">Reception</text>
+  <rect class="plate" x="252" y="158" width="170" height="26" rx="13"/>
+  <text class="ptext" x="337" y="176" text-anchor="middle">Reception &amp; Handover</text>
   <rect class="plate" x="446" y="259" width="110" height="26" rx="13"/>
   <text class="ptext" x="501" y="277" text-anchor="middle">Happy Hill</text>
   <rect class="plate" x="656" y="252" width="170" height="26" rx="13"/>
@@ -348,7 +348,7 @@
     <g><circle class="marker" cx="470" cy="552" r="13"/><text class="mnum" x="470" y="557" text-anchor="middle">5</text><text class="ltext" x="492" y="557">Happy Hill</text></g>
     <g><circle class="marker" cx="48" cy="584" r="13"/><text class="mnum" x="48" y="589" text-anchor="middle">2</text><text class="ltext" x="70" y="589">K9-iQ indoor arena &amp; shop</text></g>
     <g><circle class="marker" cx="470" cy="584" r="13"/><text class="mnum" x="470" y="589" text-anchor="middle">6</text><text class="ltext" x="492" y="589">Agility Adventures</text></g>
-    <g><circle class="marker" cx="48" cy="616" r="13"/><text class="mnum" x="48" y="621" text-anchor="middle">3</text><text class="ltext" x="70" y="621">Reception, stables &amp; indoor rest</text></g>
+    <g><circle class="marker" cx="48" cy="616" r="13"/><text class="mnum" x="48" y="621" text-anchor="middle">3</text><text class="ltext" x="70" y="621">Reception, handover &amp; rest area</text></g>
     <g><circle class="marker" cx="470" cy="616" r="13"/><text class="mnum" x="470" y="621" text-anchor="middle">7</text><text class="ltext" x="492" y="621">Zoomy Zone</text></g>
     <g><circle class="marker" cx="48" cy="648" r="13"/><text class="mnum" x="48" y="653" text-anchor="middle">4</text><text class="ltext" x="70" y="653">Sensory Sniffari</text></g>
     <g><circle class="marker" cx="470" cy="648" r="13"/><text class="mnum" x="470" y="653" text-anchor="middle">8</text><text class="ltext" x="492" y="653">Wild Wood</text></g>
