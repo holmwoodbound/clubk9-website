@@ -1,179 +1,172 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img"
      aria-labelledby="mapTitle mapDesc" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, sans-serif">
   <title id="mapTitle">Map of the Club K9 site</title>
-  <desc id="mapDesc">An illustrated plan of Club K9 off Capel Road, Rusper. From the road: the car park, the
-    K9-iQ indoor play and enrichment barn with the Country Dog Barn shop, the daycare reception and indoor rest
-    area, the outdoor sensory zone, two small dog play and exercise paddocks, and the large dog play and
-    exercise field.</desc>
+  <desc id="mapDesc">An illustrated plan of Club K9 off Capel Road, Rusper. From the entrance: the K9-iQ indoor
+    play and enrichment barn with the Country Dog Barn shop, then the car park, then the daycare reception and
+    indoor rest area which opens onto the small dog paddocks, and the outdoor sensory zone which opens onto the
+    large dog play and exercise field. Trees run around the outside of the grounds.</desc>
 
   <defs>
     <pattern id="grassTex" width="26" height="26" patternUnits="userSpaceOnUse">
       <path d="M5 22c1-4 2-7 3-11M13 24c1-5 1-8 2-12M21 22c1-4 2-7 3-11"
-            stroke="#8FA168" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".45"/>
+            stroke="#8FA168" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".4"/>
     </pattern>
+
+    <!-- one tree, reused all round the boundary -->
+    <g id="tree">
+      <rect x="-3" y="5" width="6" height="15" rx="2.5" fill="#5E4630"/>
+      <circle cx="-7" cy="1" r="10" fill="#44552C"/>
+      <circle cx="7" cy="2" r="9" fill="#5A6D3B"/>
+      <circle cx="0" cy="-6" r="12" fill="#4F6034"/>
+    </g>
+
     <style>
       .plate  { fill:#FFFDF8; opacity:.94; }
       .ptext  { fill:#3B4A2C; font-size:15px; font-weight:700; }
       .marker { fill:#5C6B3D; }
       .mnum   { fill:#ffffff; font-size:15px; font-weight:700; }
       .ltext  { fill:#3B4A2C; font-size:14.5px; font-weight:600; }
-      .fence  { fill:none; stroke:#5C6B3D; stroke-width:3.5; stroke-linejoin:round; }
+      .fence  { fill:none; stroke:#5C6B3D; stroke-width:3.5; }
     </style>
   </defs>
 
   <rect width="900" height="640" fill="#E8EBE0"/>
 
   <!-- ===================== Capel Road ===================== -->
-  <path d="M-20 176L920 26" stroke="#C3C3BB" stroke-width="30" fill="none"/>
-  <path d="M-20 176L920 26" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="16 16" fill="none" opacity=".8"/>
-  <text x="700" y="66" font-size="15" font-weight="700" fill="#6E6E66"
-        transform="rotate(-9 700 66)">Capel Road</text>
+  <path d="M-20 74L920 44" stroke="#C3C3BB" stroke-width="28" fill="none"/>
+  <path d="M-20 74L920 44" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="16 16" fill="none" opacity=".85"/>
+  <text x="742" y="40" font-size="15" font-weight="700" fill="#6E6E66">Capel Road</text>
 
-  <!-- driveway in from the road, down past the barn to the car park -->
-  <path d="M188 150C150 210 120 250 104 300c-14 44-12 66-12 88"
-        stroke="#DCCCA8" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <!-- entrance driveway, road down to the car park -->
+  <path d="M208 72C208 130 196 176 196 258" stroke="#DCCCA8" stroke-width="20"
+        fill="none" stroke-linecap="round"/>
+  <text x="238" y="128" font-size="13.5" font-weight="700" fill="#8A7A55">Entrance</text>
 
-  <!-- ===================== woodland edges ===================== -->
-  <g fill="#4F6034">
-    <path d="M846 150c30 24 40 130 24 210-12 62-52 52-58-14-8-84-2-222 34-196Z"/>
-    <path d="M282 494L868 318L880 348L294 524Z"/>
+  <!-- ===================== large dog field (6) ===================== -->
+  <rect x="382" y="330" width="486" height="142" rx="48" fill="#8CA05F"/>
+  <rect x="382" y="330" width="486" height="142" rx="48" fill="url(#grassTex)"/>
+  <rect x="382" y="330" width="486" height="142" rx="48" class="fence"/>
+
+  <!-- ===================== small dog paddocks (5) ===================== -->
+  <rect x="382" y="158" width="478" height="136" rx="46" fill="#B3C48C"/>
+  <rect x="382" y="158" width="478" height="136" rx="46" fill="url(#grassTex)"/>
+  <rect x="382" y="158" width="478" height="136" rx="46" class="fence"/>
+  <!-- internal fence splitting the two paddocks -->
+  <path d="M616 158v136" class="fence" stroke="#6E7F4A"/>
+
+  <!-- worn tracks through the grass -->
+  <g stroke="#D9C9A6" stroke-width="9" fill="none" stroke-linecap="round" opacity=".8">
+    <path d="M430 250c90-22 150 6 232-12 66-14 118-30 166-26"/>
+    <path d="M430 420c96-24 158 4 244-14 62-14 108-28 152-26"/>
+    <path d="M436 200c66-14 112 2 176-8"/>
   </g>
-  <g fill="#3E4E28">
-    <circle cx="856" cy="200" r="17"/><circle cx="866" cy="258" r="19"/><circle cx="858" cy="316" r="16"/>
-    <circle cx="330" cy="500" r="15"/><circle cx="420" cy="474" r="16"/><circle cx="512" cy="446" r="15"/>
-    <circle cx="606" cy="418" r="16"/><circle cx="700" cy="390" r="14"/><circle cx="792" cy="362" r="16"/>
+
+  <!-- ===================== outdoor sensory zone (4) — attached to the large dog field -->
+  <rect x="268" y="336" width="126" height="130" rx="30" fill="#CDBA76"/>
+  <rect x="268" y="336" width="126" height="130" rx="30" class="fence"/>
+  <g fill="#A8913F" opacity=".65">
+    <circle cx="300" cy="372" r="8"/><circle cx="342" cy="392" r="10"/><circle cx="368" cy="358" r="6"/>
+    <circle cx="304" cy="428" r="7"/><circle cx="348" cy="440" r="8"/>
   </g>
 
-  <!-- ===================== small dog paddocks (purple on Jo's plan) ===================== -->
+  <!-- ===================== reception & indoor rest (3) — attached to the paddocks -->
   <g>
-    <path d="M240 300L455 236L474 326L259 390Z" fill="#B3C48C"/>
-    <path d="M240 300L455 236L474 326L259 390Z" fill="url(#grassTex)"/>
-    <path d="M455 236L830 124L849 214L474 326Z" fill="#B3C48C"/>
-    <path d="M455 236L830 124L849 214L474 326Z" fill="url(#grassTex)"/>
-    <path class="fence" d="M240 300L455 236L830 124L849 214L474 326L259 390Z"/>
-    <path class="fence" d="M455 236L474 326" stroke="#6E7F4A"/>
+    <path d="M262 190l66-30 66 30Z" fill="#5E4630"/>
+    <rect x="268" y="188" width="126" height="104" rx="18" fill="#8A6440"/>
+    <rect x="312" y="238" width="38" height="54" rx="6" fill="#F2EFE6"/>
+    <rect x="280" y="208" width="24" height="20" rx="4" fill="#F2EFE6" opacity=".85"/>
+    <rect x="358" y="208" width="24" height="20" rx="4" fill="#F2EFE6" opacity=".85"/>
   </g>
 
-  <!-- ===================== large dog field (cyan on Jo's plan) ===================== -->
-  <path d="M259 390L849 214L868 308L278 484Z" fill="#8CA05F"/>
-  <path d="M259 390L849 214L868 308L278 484Z" fill="url(#grassTex)"/>
-  <path class="fence" d="M259 390L849 214L868 308L278 484Z"/>
-
-  <!-- dirt tracks worn through the fields -->
-  <g stroke="#D9C9A6" stroke-width="9" fill="none" stroke-linecap="round" opacity=".85">
-    <path d="M300 372C400 344 470 356 560 330c96-28 150-56 244-82"/>
-    <path d="M320 448C420 424 500 430 590 404c92-26 160-50 252-76"/>
-    <path d="M300 282c80-20 130-14 196-32"/>
-  </g>
-
-  <!-- ===================== outdoor sensory zone (yellow) ===================== -->
-  <path d="M136 392L250 392L250 478L136 478Z" fill="#CDBA76"/>
-  <path class="fence" d="M136 392L250 392L250 478L136 478Z"/>
-  <g fill="#A8913F" opacity=".7">
-    <circle cx="164" cy="418" r="7"/><circle cx="200" cy="440" r="9"/><circle cx="230" cy="412" r="6"/>
-    <circle cx="176" cy="458" r="6"/><circle cx="216" cy="466" r="7"/>
-  </g>
-
-  <!-- ===================== reception & indoor rest (red) ===================== -->
+  <!-- ===================== car park (1) ===================== -->
   <g>
-    <path d="M128 300l54-26 54 26Z" fill="#5E4630"/>
-    <rect x="134" y="298" width="96" height="82" rx="5" fill="#8A6440"/>
-    <rect x="168" y="336" width="30" height="44" rx="4" fill="#F2EFE6"/>
-    <rect x="144" y="314" width="20" height="17" rx="3" fill="#F2EFE6" opacity=".85"/>
-    <rect x="202" y="314" width="20" height="17" rx="3" fill="#F2EFE6" opacity=".85"/>
-  </g>
-
-  <!-- ===================== K9-iQ barn & Country Dog Barn shop ===================== -->
-  <g>
-    <path d="M24 278l50-24 50 24Z" fill="#5E4630"/>
-    <rect x="30" y="276" width="88" height="70" rx="5" fill="#8A6440"/>
-    <rect x="58" y="310" width="30" height="36" rx="4" fill="#F2EFE6"/>
-    <!-- little shop lean-to -->
-    <rect x="30" y="348" width="88" height="26" rx="5" fill="#6E4F33"/>
-    <text x="74" y="366" font-size="11" font-weight="700" fill="#F2EFE6" text-anchor="middle">SHOP</text>
-  </g>
-
-  <!-- ===================== car park ===================== -->
-  <g>
-    <rect x="26" y="392" width="96" height="86" rx="10" fill="#CFCFC6"/>
+    <rect x="150" y="252" width="104" height="150" rx="26" fill="#CFCFC6"/>
     <g stroke="#FFFFFF" stroke-width="2.5" opacity=".9">
-      <path d="M50 400v70M74 400v70M98 400v70"/>
+      <path d="M176 268v118M202 268v118M228 268v118"/>
     </g>
     <!-- the woof bus, pulling in -->
-    <g transform="translate(30 486)">
-      <rect x="0" y="0" width="66" height="30" rx="7" fill="#7A8B54"/>
-      <rect x="41" y="5" width="19" height="13" rx="3" fill="#EDEFE6" opacity=".92"/>
-      <text x="6" y="21" font-size="11" font-weight="700" fill="#FFFFFF">WOOF</text>
-      <circle cx="15" cy="32" r="6" fill="#3A3A3A"/><circle cx="52" cy="32" r="6" fill="#3A3A3A"/>
+    <g transform="translate(160 412)">
+      <rect x="0" y="0" width="70" height="32" rx="8" fill="#7A8B54"/>
+      <rect x="44" y="6" width="20" height="14" rx="3" fill="#EDEFE6" opacity=".92"/>
+      <text x="7" y="22" font-size="11" font-weight="700" fill="#FFFFFF">WOOF</text>
+      <circle cx="16" cy="34" r="6.5" fill="#3A3A3A"/><circle cx="55" cy="34" r="6.5" fill="#3A3A3A"/>
     </g>
+  </g>
+
+  <!-- ===================== K9-iQ arena & shop (2) ===================== -->
+  <g>
+    <path d="M22 258l52-28 52 28Z" fill="#5E4630"/>
+    <rect x="28" y="256" width="94" height="106" rx="18" fill="#8A6440"/>
+    <rect x="58" y="308" width="34" height="54" rx="6" fill="#F2EFE6"/>
+    <rect x="28" y="366" width="94" height="28" rx="12" fill="#6E4F33"/>
+    <text x="75" y="385" font-size="11" font-weight="700" fill="#F2EFE6" text-anchor="middle">SHOP</text>
   </g>
 
   <!-- ===================== dogs ===================== -->
   <g>
-    <g transform="translate(600 262)" fill="#5E4630">
+    <g transform="translate(690 230)" fill="#5E4630">
       <ellipse rx="14" ry="8"/><circle cx="12" cy="-7" r="6.5"/>
       <path d="M-13 1l-7 7" stroke="#5E4630" stroke-width="3.5" stroke-linecap="round" fill="none"/>
     </g>
-    <g transform="translate(430 400)" fill="#C9A24B">
+    <g transform="translate(560 402)" fill="#C9A24B">
       <ellipse rx="13" ry="7.5"/><circle cx="11" cy="-6" r="6"/>
       <path d="M-12 1l-6 6" stroke="#C9A24B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
     </g>
-    <g transform="translate(350 292)" fill="#F2EFE6">
+    <g transform="translate(478 214)" fill="#F2EFE6">
       <ellipse rx="10" ry="6"/><circle cx="9" cy="-5" r="5"/>
       <path d="M-9 1l-5 5" stroke="#F2EFE6" stroke-width="3" stroke-linecap="round" fill="none"/>
     </g>
   </g>
 
-  <!-- ===================== markers ===================== -->
+  <!-- ===================== trees round the outer perimeter ===================== -->
   <g>
-    <circle class="marker" cx="74" cy="434" r="17"/><text class="mnum" x="74" y="440" text-anchor="middle">1</text>
-    <circle class="marker" cx="74" cy="242" r="17"/><text class="mnum" x="74" y="248" text-anchor="middle">2</text>
-    <circle class="marker" cx="182" cy="264" r="17"/><text class="mnum" x="182" y="270" text-anchor="middle">3</text>
-    <circle class="marker" cx="193" cy="434" r="17"/><text class="mnum" x="193" y="440" text-anchor="middle">4</text>
-    <circle class="marker" cx="352" cy="318" r="17"/><text class="mnum" x="352" y="324" text-anchor="middle">5</text>
-    <circle class="marker" cx="650" cy="216" r="17"/><text class="mnum" x="650" y="222" text-anchor="middle">5</text>
-    <circle class="marker" cx="556" cy="352" r="17"/><text class="mnum" x="556" y="358" text-anchor="middle">6</text>
+    <!-- along the top, between road and paddocks -->
+    <use href="#tree" x="404" y="126"/><use href="#tree" x="462" y="118"/><use href="#tree" x="520" y="126"/>
+    <use href="#tree" x="578" y="116"/><use href="#tree" x="636" y="126"/><use href="#tree" x="694" y="118"/>
+    <use href="#tree" x="752" y="126"/><use href="#tree" x="810" y="118"/><use href="#tree" x="862" y="130"/>
+    <!-- right-hand edge -->
+    <use href="#tree" x="884" y="186"/><use href="#tree" x="890" y="246"/><use href="#tree" x="884" y="306"/>
+    <use href="#tree" x="890" y="366"/><use href="#tree" x="884" y="426"/>
+    <!-- along the bottom -->
+    <use href="#tree" x="844" y="492"/><use href="#tree" x="786" y="500"/><use href="#tree" x="728" y="492"/>
+    <use href="#tree" x="670" y="500"/><use href="#tree" x="612" y="492"/><use href="#tree" x="554" y="500"/>
+    <use href="#tree" x="496" y="492"/><use href="#tree" x="438" y="500"/><use href="#tree" x="382" y="492"/>
+    <use href="#tree" x="324" y="490"/><use href="#tree" x="266" y="494"/><use href="#tree" x="262" y="452"/>
+    <!-- left-hand edge -->
+    <use href="#tree" x="14" y="430"/><use href="#tree" x="12" y="196"/><use href="#tree" x="140" y="196"/>
   </g>
 
-  <!-- on-map labels for the two big fields -->
-  <rect class="plate" x="548" y="238" width="204" height="26" rx="13"/>
-  <text class="ptext" x="650" y="256" text-anchor="middle">Small dog paddocks</text>
-  <rect class="plate" x="452" y="374" width="208" height="26" rx="13"/>
-  <text class="ptext" x="556" y="392" text-anchor="middle">Large dog field</text>
+  <!-- ===================== markers ===================== -->
+  <g>
+    <circle class="marker" cx="202" cy="300" r="17"/><text class="mnum" x="202" y="306" text-anchor="middle">1</text>
+    <circle class="marker" cx="75" cy="224" r="17"/><text class="mnum" x="75" y="230" text-anchor="middle">2</text>
+    <circle class="marker" cx="331" cy="200" r="17"/><text class="mnum" x="331" y="206" text-anchor="middle">3</text>
+    <circle class="marker" cx="331" cy="400" r="17"/><text class="mnum" x="331" y="406" text-anchor="middle">4</text>
+    <circle class="marker" cx="500" cy="180" r="17"/><text class="mnum" x="500" y="186" text-anchor="middle">5</text>
+    <circle class="marker" cx="742" cy="180" r="17"/><text class="mnum" x="742" y="186" text-anchor="middle">5</text>
+    <circle class="marker" cx="470" cy="356" r="17"/><text class="mnum" x="470" y="362" text-anchor="middle">6</text>
+  </g>
+
+  <!-- on-map labels -->
+  <rect class="plate" x="518" y="238" width="204" height="26" rx="13"/>
+  <text class="ptext" x="620" y="256" text-anchor="middle">Small dog paddocks</text>
+  <rect class="plate" x="546" y="428" width="208" height="26" rx="13"/>
+  <text class="ptext" x="650" y="446" text-anchor="middle">Large dog field</text>
 
   <!-- ===================== legend ===================== -->
   <g>
     <line x1="30" y1="536" x2="870" y2="536" stroke="#CBD2BC" stroke-width="2"/>
-    <g>
-      <circle class="marker" cx="44" cy="570" r="13"/><text class="mnum" x="44" y="575" text-anchor="middle">1</text>
-      <text class="ltext" x="66" y="575">Car park</text>
-    </g>
-    <g>
-      <circle class="marker" cx="304" cy="570" r="13"/><text class="mnum" x="304" y="575" text-anchor="middle">2</text>
-      <text class="ltext" x="326" y="575">K9-iQ barn &amp; Country Dog Barn shop</text>
-    </g>
-    <g>
-      <circle class="marker" cx="44" cy="606" r="13"/><text class="mnum" x="44" y="611" text-anchor="middle">3</text>
-      <text class="ltext" x="66" y="611">Reception &amp; indoor rest area</text>
-    </g>
-    <g>
-      <circle class="marker" cx="304" cy="606" r="13"/><text class="mnum" x="304" y="611" text-anchor="middle">4</text>
-      <text class="ltext" x="326" y="611">Outdoor sensory zone</text>
-    </g>
-    <g>
-      <circle class="marker" cx="620" cy="570" r="13"/><text class="mnum" x="620" y="575" text-anchor="middle">5</text>
-      <text class="ltext" x="642" y="575">Small dog play &amp; exercise</text>
-    </g>
-    <g>
-      <circle class="marker" cx="620" cy="606" r="13"/><text class="mnum" x="620" y="611" text-anchor="middle">6</text>
-      <text class="ltext" x="642" y="611">Large dog play &amp; exercise</text>
-    </g>
-  </g>
-
-  <!-- compass -->
-  <g transform="translate(842 452)">
-    <circle r="22" fill="#FFFDF8" opacity=".92"/>
-    <path d="M0-13l6 14-6-4-6 4Z" fill="#5C6B3D"/>
-    <text y="-15" text-anchor="middle" font-size="11" font-weight="700" fill="#5C6B3D">N</text>
+    <g><circle class="marker" cx="44" cy="570" r="13"/><text class="mnum" x="44" y="575" text-anchor="middle">1</text>
+       <text class="ltext" x="66" y="575">Entrance &amp; car park</text></g>
+    <g><circle class="marker" cx="304" cy="570" r="13"/><text class="mnum" x="304" y="575" text-anchor="middle">2</text>
+       <text class="ltext" x="326" y="575">K9-iQ arena &amp; Country Dog Barn shop</text></g>
+    <g><circle class="marker" cx="44" cy="606" r="13"/><text class="mnum" x="44" y="611" text-anchor="middle">3</text>
+       <text class="ltext" x="66" y="611">Reception &amp; indoor rest area</text></g>
+    <g><circle class="marker" cx="304" cy="606" r="13"/><text class="mnum" x="304" y="611" text-anchor="middle">4</text>
+       <text class="ltext" x="326" y="611">Outdoor sensory zone</text></g>
+    <g><circle class="marker" cx="620" cy="570" r="13"/><text class="mnum" x="620" y="575" text-anchor="middle">5</text>
+       <text class="ltext" x="642" y="575">Small dog play &amp; exercise</text></g>
+    <g><circle class="marker" cx="620" cy="606" r="13"/><text class="mnum" x="620" y="611" text-anchor="middle">6</text>
+       <text class="ltext" x="642" y="611">Large dog play &amp; exercise</text></g>
   </g>
 </svg>
