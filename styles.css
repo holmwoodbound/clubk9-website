@@ -435,6 +435,25 @@ p { margin: 0 0 1.1em; }
   font-size: 1.35rem; font-weight: 600;
 }
 .service-card h3 { margin-bottom: .6em; }
+
+/* ---- service cards that carry a photo ---- */
+.service-card--photo { padding: 0; overflow: hidden; }
+.svc-photo { aspect-ratio: 16 / 10; overflow: hidden; background: var(--sage-pale); }
+.svc-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .55s ease;
+}
+.service-card--photo:hover .svc-photo img { transform: scale(1.07); }
+/* the numbered badge sits over the bottom edge of the photo */
+.service-card--photo .svc-num {
+  position: relative; z-index: 1;
+  margin-top: -27px; margin-bottom: 1rem;
+  border: 3px solid var(--white);
+}
+.svc-body { padding: 0 1.7rem 2.1rem; }
+/* stand-in panel where there is no photo yet */
+.svc-photo-blank { display: grid; place-items: center; background: var(--sage); }
+.svc-photo-blank svg { width: 62px; height: 62px; fill: var(--olive); opacity: .5; }
 .service-card p { color: var(--muted); margin: 0; font-size: .98rem; }
 
 /* ===== split bands (text panel + edge-to-edge photo) ============ */
@@ -670,12 +689,13 @@ p { margin: 0 0 1.1em; }
 }
 .review-avatar {
   position: absolute; top: -26px; left: 50%; transform: translateX(-50%);
-  width: 52px; height: 52px; display: grid; place-items: center;
+  width: 56px; height: 56px; display: grid; place-items: center;
   background: var(--olive-deep); color: #fff;
   border: 3px solid var(--white);
-  border-radius: 50%;
+  border-radius: 50%; overflow: hidden;
   font-family: 'Oswald', sans-serif; font-size: 1.2rem;
 }
+.review-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .review .stars { color: var(--gold); letter-spacing: .12em; margin-bottom: .7rem; }
 .review blockquote {
   margin: 0 0 1rem; padding: 0;
