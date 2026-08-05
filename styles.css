@@ -485,9 +485,7 @@ p { margin: 0 0 1.1em; }
   border: 3px solid var(--white);
 }
 .svc-body { padding: 0 1.7rem 2.1rem; }
-/* stand-in panel where there is no photo yet */
-.svc-photo-blank { display: grid; place-items: center; background: var(--sage); }
-.svc-photo-blank svg { width: 62px; height: 62px; fill: var(--olive); opacity: .5; }
+
 .service-card p { color: var(--muted); margin: 0; font-size: .98rem; }
 
 /* ===== split bands (text panel + edge-to-edge photo) ============ */
