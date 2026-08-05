@@ -60,6 +60,8 @@ which is worse — it fails quietly.
 `clubk9.co.uk` and `www.clubk9.co.uk` are both added to the Netlify project and
 sitting at *Pending DNS verification* — waiting for you.
 
+The Netlify address has also been shortened to **clubk9.netlify.app**.
+
 ---
 
 ## The DNS settings for Freeola
@@ -87,11 +89,11 @@ lives in one place and you can drop Wix entirely.
 | Type | Name / Host | Points to |
 |------|-------------|-----------|
 | **A** | `@`  (or blank / `clubk9.co.uk`) | `75.2.60.5` |
-| **CNAME** | `www` | `fabulous-griffin-526ee0.netlify.app` |
+| **CNAME** | `www` | `clubk9.netlify.app` |
 
 *(Verified against Netlify's live load balancer on 4 August 2026. If Freeola offers
 an **ALIAS** or **ANAME** type, use that for `@` pointing at
-`fabulous-griffin-526ee0.netlify.app` instead of the A record — it's slightly better,
+`clubk9.netlify.app` instead of the A record — it's slightly better,
 but the A record works perfectly well.)*
 
 Delete any **old A records pointing at Wix** — those are `185.230.63.171`,
