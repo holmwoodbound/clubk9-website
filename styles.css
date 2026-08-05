@@ -421,6 +421,9 @@ p { margin: 0 0 1.1em; }
   line-height: 1;
   color: #fff;
 }
+/* a word rather than a number, so it needs to sit smaller to fit */
+.num-word { font-size: clamp(1.6rem, 3.4vw, 2.4rem) !important; }
+
 .stat .label {
   display: block; margin-top: .4rem;
   font-size: .9rem; letter-spacing: .06em;
