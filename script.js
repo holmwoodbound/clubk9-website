@@ -135,7 +135,7 @@ Gender: ${v('gender')}
 
 ${v('message')}`;
       window.location.href =
-        `mailto:clubk9rusper@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        `mailto:info@clubk9.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
 
