@@ -210,6 +210,16 @@ p { margin: 0 0 1.1em; }
   text-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
+/* ---- "formerly Holmwood Bound" line in the hero ---- */
+.hero-former {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; letter-spacing: .14em;
+  font-size: .82rem;
+  color: rgba(255,255,255,.82);
+  margin: -.6rem 0 1.6rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,.45);
+}
+
 /* ---- headline price flash in the hero ---- */
 .price-flash-row { margin-bottom: 1.8rem; }
 .price-flash {
