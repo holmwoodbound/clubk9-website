@@ -210,6 +210,30 @@ p { margin: 0 0 1.1em; }
   text-shadow: 0 2px 14px rgba(0,0,0,.4);
 }
 
+/* ---- headline price flash in the hero ---- */
+.price-flash-row { margin-bottom: 1.8rem; }
+.price-flash {
+  display: inline-flex; align-items: baseline; gap: .45rem;
+  margin: 0;
+  padding: .6rem 1.5rem;
+  background: rgba(20,26,14,.55);
+  border: 2px solid var(--gold);
+  border-radius: 100px;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+  transition: background .25s, transform .25s, border-color .25s;
+}
+.price-flash:hover { background: rgba(20,26,14,.75); border-color: #E0BC66; transform: translateY(-2px); }
+.pf-from, .pf-unit {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; letter-spacing: .08em;
+  font-size: .82rem; color: #fff;
+}
+.pf-amount {
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  font-size: 2rem; line-height: 1; color: var(--gold);
+}
+
 /* ===== inner-page hero (shorter than the home page one) ========= */
 .page-hero {
   position: relative;
