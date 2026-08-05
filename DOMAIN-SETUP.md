@@ -55,22 +55,69 @@ which is worse — it fails quietly.
 
 ---
 
-## What you change at Freeola
+## ✅ Netlify side is DONE
 
-Only one thing: the **nameservers**.
+`clubk9.co.uk` and `www.clubk9.co.uk` are both added to the Netlify project and
+sitting at *Pending DNS verification* — waiting for you.
 
-1. Log in at **getdotted.com** (Freeola's domain side)
-2. Find **clubk9.co.uk** → look for *Nameservers*, *DNS*, or *Domain Settings*
-3. Replace the two Wix entries:
-   ```
-   ns10.wixdns.net
-   ns11.wixdns.net
-   ```
-   with the four Netlify gives us (they look like `dns1.p01.nsone.net` … `dns4.p01.nsone.net`
-   — I'll confirm the exact ones)
-4. Save
+---
 
-Then it's a waiting game — usually an hour or two, occasionally up to 48.
+## The DNS settings for Freeola
+
+**First, an important detail:** your DNS is currently answered by **Wix**, not Freeola.
+Freeola is only your *registrar*. So there are two steps.
+
+### Step 1 — move DNS from Wix to Freeola
+
+Log in at **getdotted.com** → find `clubk9.co.uk` → **Nameservers**.
+
+Replace:
+```
+ns10.wixdns.net
+ns11.wixdns.net
+```
+with Freeola's own nameservers (they'll be shown in your account, usually
+something like `ns1.freeola.net` / `ns2.freeola.net`).
+
+This hands DNS back to Freeola, who already run your email — so everything
+lives in one place and you can drop Wix entirely.
+
+### Step 2 — add these two records in Freeola's DNS panel
+
+| Type | Name / Host | Points to |
+|------|-------------|-----------|
+| **A** | `@`  (or blank / `clubk9.co.uk`) | `75.2.60.5` |
+| **CNAME** | `www` | `fabulous-griffin-526ee0.netlify.app` |
+
+*(Verified against Netlify's live load balancer on 4 August 2026. If Freeola offers
+an **ALIAS** or **ANAME** type, use that for `@` pointing at
+`fabulous-griffin-526ee0.netlify.app` instead of the A record — it's slightly better,
+but the A record works perfectly well.)*
+
+Delete any **old A records pointing at Wix** — those are `185.230.63.171`,
+`185.230.63.186` and `185.230.63.107`. Leaving them in place will make the site
+load Wix roughly half the time.
+
+### Step 3 — check your email records survived
+
+Once DNS is at Freeola, confirm these are present. Freeola should add their own
+mail records automatically, but **check** — if they're missing, email stops:
+
+| Type | Name | Priority | Value |
+|------|------|----------|-------|
+| MX | `@` | 10 | `mx2.freeola.com` |
+| MX | `@` | 10 | `mx3.freeola.com` |
+| MX | `@` | 10 | `mx4.freeola.com` |
+| MX | `@` | 10 | `mx5.freeola.com` |
+| TXT | `@` | — | `v=spf1 include:spf.freeola.net ~all` |
+
+---
+
+## After the change
+
+Give it an hour or two (occasionally up to 48). Then tell me, and I'll confirm
+it's resolving correctly and that the HTTPS certificate has been issued —
+Netlify does that automatically once DNS points its way.
 
 ---
 
