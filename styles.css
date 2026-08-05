@@ -221,19 +221,16 @@ p { margin: 0 0 1.1em; }
 }
 
 /* ---- headline price flash in the hero ---- */
-.price-flash-row { margin-bottom: 1.8rem; }
+.price-flash-row { text-align: center; margin: -.6rem 0 2.2rem; }
 .price-flash {
   display: inline-flex; align-items: baseline; gap: .45rem;
   margin: 0;
-  padding: .6rem 1.5rem;
-  background: rgba(20,26,14,.55);
+  padding: .6rem 1.6rem;
+  background: var(--olive-deep);
   border: 2px solid var(--gold);
   border-radius: 100px;
   text-decoration: none;
-  backdrop-filter: blur(2px);
-  transition: background .25s, transform .25s, border-color .25s;
 }
-.price-flash:hover { background: rgba(20,26,14,.75); border-color: #E0BC66; transform: translateY(-2px); }
 .pf-from, .pf-unit {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase; letter-spacing: .08em;
