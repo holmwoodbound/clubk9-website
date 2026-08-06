@@ -686,8 +686,13 @@
         </div>
       </div>
 
-      <!-- form (opens the visitor's email app pre-filled) -->
-      <form class="contact-form reveal" id="contactForm">
+      <!-- Netlify handles this form: submissions land in the Netlify dashboard
+           and are emailed on to info@clubk9.co.uk -->
+      <form class="contact-form reveal" id="contactForm"
+            name="enquiry" method="POST" action="/thanks.html"
+            data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="enquiry" />
+        <p hidden><label>Leave this empty: <input name="bot-field" /></label></p>
         <div class="field">
           <label for="name">Your name</label>
           <input type="text" id="name" name="name" placeholder="Jane Smith" required />
@@ -730,7 +735,7 @@
           <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your pup and what you're after..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Send my message</button>
-        <p class="form-hint">This opens your email app ready to send. Prefer to chat? Just call or text <a href="tel:07437677607">07437&nbsp;677607</a>.</p>
+        <p class="form-hint">We'll get straight back to you. Prefer to chat? Just call or text <a href="tel:07437677607">07437&nbsp;677607</a>.</p>
       </form>
     </div>
   </div>

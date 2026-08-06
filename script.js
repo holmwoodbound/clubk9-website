@@ -116,28 +116,9 @@
     });
   }
 
-  /* ---- Contact form -> opens the visitor's email app ------------ */
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const v = (id) => (document.getElementById(id).value || '').trim();
-      const subject = `Club K9 enquiry from ${v('name') || 'a dog lover'}`;
-      const body =
-`Name: ${v('name')}
-Email: ${v('email')}
-Phone: ${v('phone')}
-
-Dog's name: ${v('dog')}
-Breed: ${v('breed')}
-Age: ${v('age')}
-Gender: ${v('gender')}
-
-${v('message')}`;
-      window.location.href =
-        `mailto:info@clubk9.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
-  }
+  /* ---- Contact form -------------------------------------------
+     Netlify captures this one server-side, so there's no JavaScript
+     to do here — the form posts on its own. */
 
   /* ---- Footer year --------------------------------------------- */
   const yr = document.getElementById('year');
