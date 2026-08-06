@@ -111,6 +111,8 @@ p { margin: 0 0 1.1em; }
   position: sticky; top: 0; z-index: 60;
   background: var(--olive);
   transition: box-shadow .25s;
+  /* stop the browser re-adjusting scroll when the header resizes */
+  overflow-anchor: none;
 }
 .site-header.scrolled { box-shadow: 0 4px 18px rgba(0,0,0,.18); }
 

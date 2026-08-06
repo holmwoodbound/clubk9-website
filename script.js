@@ -46,9 +46,20 @@
   /* ---- Sticky header shadow + back-to-top ----------------------- */
   const header = document.querySelector('.site-header');
   const toTop = document.getElementById('toTop');
+  /* The header shrinks by ~51px, so a single trigger point makes it
+     oscillate: shrinking moves the page up, which pushes the scroll back
+     under the threshold, which expands it again. Two thresholds with a
+     gap wider than the height change break that loop. */
+  const SHRINK_AT  = 110;   // shrink once we are well past the top
+  const RESTORE_AT = 40;    // only grow back near the very top
+  let shrunk = false;
+
   const onScroll = () => {
     const y = window.scrollY;
-    if (header) header.classList.toggle('scrolled', y > 12);
+    if (header) {
+      if (!shrunk && y > SHRINK_AT)       { shrunk = true;  header.classList.add('scrolled'); }
+      else if (shrunk && y < RESTORE_AT)  { shrunk = false; header.classList.remove('scrolled'); }
+    }
     if (toTop) toTop.classList.toggle('show', y > 600);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
