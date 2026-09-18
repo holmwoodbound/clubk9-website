@@ -340,6 +340,38 @@ p { margin: 0 0 1.1em; }
 .section-sub { color: var(--muted); font-size: 1.05rem; margin: 0; }
 .section-head-light .section-sub { color: rgba(255,255,255,.85); }
 
+/* ===== headline statement — the whole offer in one paragraph ====
+   Sits between About and the counters. Deliberately tighter padding
+   than a normal band so it reads as a pause, not a new section. */
+.statement {
+  background: var(--beige);
+  padding: clamp(2.4rem, 4.5vw, 3.4rem) 0;
+  border-top: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+}
+.statement-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: clamp(1.1rem, 2.1vw, 1.4rem);
+  line-height: 1.6;
+  color: var(--brown);
+  position: relative;
+}
+/* a small paw above the text instead of a heading */
+.statement-text::before {
+  content: "\1F43E";
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: .9rem;
+  opacity: .85;
+}
+.statement-text strong {
+  color: var(--olive-dark);
+  font-weight: 800;
+}
+
 /* ===== about — paw-tick checklist =============================== */
 .about-grid {
   display: grid; grid-template-columns: 1.4fr .8fr;
